@@ -7,7 +7,7 @@ case "$sent" in
 	"+") num=$((num1 + num2)) ;;
 	"-") num=$((num2 - num1)) ;;
 	"*") num=$((num1 * num2)) ;;
-	"%") num=$((num2 / num1)) ;;
+	"/") num=$((num2 / num1)) ;;
 	*) echo "unknown operator" ;;
 esac
 
