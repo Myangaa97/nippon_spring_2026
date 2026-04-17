@@ -1,0 +1,12 @@
+BEGIN
+    SET b=0
+    SET count=1
+    WHILE  count <= 5 DO
+        INPUT a
+            IF a>b THEN
+            b=a
+            ENDIF
+            count=count+1
+    ENDWHILE
+    OUTPUT "hamgiin ih too bol" +b
+END

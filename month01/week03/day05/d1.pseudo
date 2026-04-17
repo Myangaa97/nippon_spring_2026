@@ -1,0 +1,23 @@
+BEGIN
+    OUTPUT "Ehnii too oruul"    
+    INPUT a
+    OUTPUT "2dah too oruul" 
+    INPUT b
+    OUTPUT "temdegtee oruul +,-,*,/" 
+    INPUT c
+    IF a <= 0 AND b <= 0 THEN
+        OUTPUT "Aldaa"
+    ELSEIF
+        c == "+"
+        OUTPUT a+b
+        ELSEIF
+            c == "-"
+            OUTPUT a-b 
+        ELSEIF
+            c == "*"
+            OUTPUT a*b
+        ELSEIF
+            c == "/"
+            OUTPUT a/b
+    ENDIF
+END

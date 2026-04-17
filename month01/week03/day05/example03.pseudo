@@ -1,0 +1,17 @@
+BEGIN
+    INPUT weather
+    IF weather = "rainy" THEN
+        OUTPUT "need a coat"
+    ELSE
+        OUTPUT "dont need a coat"
+    ENDIF
+END
+
+BEGIN
+    INPUT hour
+    IF hour >= 9 AND hour <= 21 THEN
+        OUTPUT "OPENED"
+    ELSE
+        OUTPUT "CLOSED"
+    ENDIF
+END

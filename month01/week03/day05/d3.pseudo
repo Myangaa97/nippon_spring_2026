@@ -1,0 +1,13 @@
+BEGIN
+    SET count=1
+    SET result=1
+    OUTPUT "1-10 hvrtel too oruul "
+    WHILE 
+    INPUT a
+    WHILE  count <= 10 DO
+            result=a*count
+            count=count+1
+            OUTPUT result
+    ENDWHILE
+    
+END

@@ -1,0 +1,6 @@
+BEGIN
+    OUTPUT "good morning"
+    OUTPUT "what time is it"
+    INPUT time
+    OUTPUT "yes, " + time + "..."
+END

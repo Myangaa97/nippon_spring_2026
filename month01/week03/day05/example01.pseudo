@@ -1,0 +1,4 @@
+BEGIN
+    INPUT name
+    OUTPUT "Hello " + name
+END
