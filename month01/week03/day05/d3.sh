@@ -12,10 +12,12 @@ while [ $num -ne 0 ];
         	while [ $count -le 10 ];
                 do
                     result=$((num*count))
-                    echo $num "X" $count "="$result
+                    echo $num "X" $count "=" $result
                     count=$((count+1))
                 done
         else
           echo "Invalid input (1-10 only)"
       fi
+      
+      echo ""
     done
