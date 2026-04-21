@@ -7,7 +7,7 @@ public class CircleArea {
         System.out.println("Input Radius Pls");
         int rad = scanner.nextInt();
 
-        double x = 3.14159 * rad^2;
+        double x = 3.14159 * rad * rad;
 
         System.out.println("S= " +x%.5f);
         scanner.close();
