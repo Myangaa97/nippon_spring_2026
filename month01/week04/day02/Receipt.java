@@ -16,10 +16,10 @@ public class Receipt {
         int x = price * unit;
 
         System.out.println("Product Name: " + pro);
-        System.out.println("Price: " + price);
+        System.out.println("Price (₮): " + price);
         System.out.println("Units: " + unit);
         System.out.println("----------------------");
-        System.out.println(pro + " * " + unit + " = " + x + "$");
+        System.out.println(pro + " * " + unit + " = " + x + "₮");
 
         scanner.close();
     }
