@@ -37,6 +37,15 @@ public class NumberAnalysis {
                 System.out.println("3 ba tvvnees deesh orontoi");
             }
         }
+        else {
+            if (n / 10 > 0 && n / 10 < 10) {
+                System.out.println("2 orontoi");
+            } else if (n / 1 == n && n < 10) {
+                System.out.println("1 orontoi");
+            } else {
+                System.out.println("3 ba tvvnees deesh orontoi");
+            }
+        }
         scanner.close();
     }
 }
