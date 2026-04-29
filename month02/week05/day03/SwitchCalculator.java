@@ -23,15 +23,17 @@ public class SwitchCalculator {
                 System.out.printf("%.2f + %.2f = %.2f", a, b, (a*b));
                 break;
             case '/':
-                System.out.printf("%.2f + %.2f = %.4f", a, b, (a/b));
+                System.out.printf("%.2f + %.2f = %.3f", a, b, (a/b));
                 break;
             default:
                 System.out.println("Тодорхойгүй");
             }
         } else {
             System.out.println("b too 0s ylgaatai too oruul");
+
         }
 
+        System.out.println();
         scanner.close();
     }
 }
