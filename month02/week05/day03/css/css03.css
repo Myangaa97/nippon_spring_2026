@@ -1,0 +1,42 @@
+/* tag selector */
+
+section {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(232, 243, 13);
+    color: rgb(232, 239, 12);
+}
+
+#sec1 {
+    color: rgb(211, 32, 196);
+    font-size: 32px;
+    width: 600px;
+    background-color: blueviolet;
+}
+
+#sec2 {
+    color: rgb(179, 200, 200);
+    font-size: large;
+}
+
+#sec3 {
+    color: rgb(226, 43, 116);
+    font-size: small;
+}
+
+li {
+    font-size: 30px;
+    color: aqua;
+}
+
+.japanese {
+    color: red;
+}
+
+.italian {
+    color: green;
+}
+
+.mongolian {
+    color: white;
+}
