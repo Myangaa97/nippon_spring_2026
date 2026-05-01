@@ -1,0 +1,32 @@
+section {
+    height: 100px;
+    background-color: tomato;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid blue;
+}
+
+span {
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid red;
+    display: block; /* inline element block bolgoh*/
+}
+
+.inline-element {
+    display: inline;
+    height: 100px;
+    width: 100px;
+}
+
+
+.inline-block-element {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.hidden-element {
+    display: none;
+}
