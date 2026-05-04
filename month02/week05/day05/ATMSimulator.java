@@ -8,7 +8,8 @@ public class ATMSimulator {
         System.out.println("PIN оруулна уу: ");
         int balance = 1000000;
         int pass = 1234;
-        int pin, select = 0;
+        int pin;
+        int select = 0;
         int attemps = 3;
         int logged = 0;
 
@@ -29,7 +30,7 @@ public class ATMSimulator {
                     
                     System.out.println("PIN буруу. " + attemps + " оролдлого үлдлээ");
                 } else {
-                    System.out.println("Оролдлого дууслаа. Карт түгжигдлээ.");
+                    System.out.println("Оролдлого дууслаа. Карт хаагдлаа.");
                 }
             }
         }
@@ -77,9 +78,7 @@ public class ATMSimulator {
                 System.out.printf("Дахин үйлдэл хийх үү? (1-Тийм / 4-Гарах): ");
                 select = sc.nextInt(); 
             }
-            System.out.println("Баярлалаа! Аюулгүй яваарай.");
         }
-        
         sc.close();
     }
        
