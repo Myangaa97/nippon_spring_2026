@@ -1,3 +1,4 @@
 {
-    "workbench.list.horizontalScrolling": true
+    "workbench.list.horizontalScrolling": true,
+    "liveServer.settings.port": 5501
 }
