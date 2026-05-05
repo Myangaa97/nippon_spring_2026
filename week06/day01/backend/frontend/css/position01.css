@@ -37,7 +37,7 @@ main {
 
 .container img.vec1 {
     position: absolute;
-    top: 30px;
+    top: 40px;
     z-index: 31;
 }
 .container img.vec2 {
