@@ -1,0 +1,24 @@
+.round {
+    border: 3px solid blue;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.rounnd, .pro {
+    float: left;
+    width: 1000px;
+    padding: 10px
+}
+
+img {
+    width: 300px;
+    float: left;
+    position: absolute;
+    top: 0;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
