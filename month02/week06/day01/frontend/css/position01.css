@@ -23,27 +23,25 @@ main {
 .container img#profile-image {
     position: absolute;
     top: 20px;
-    left: 36%;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
+    left: 31%;
     z-index: 1000;
 }
 
 .container img.rec1 {
     position: absolute;
     top: 0;
+    z-index: 100;
 }
 
 .container img.vec1 {
     position: absolute;
-    top: 40px;
-    z-index: 31;
+    top: 15%;
+    z-index: 50;
 }
 .container img.vec2 {
     position: absolute;
-    top: 110px;
-    z-index: 2;
+    top: 15%;
+    z-index: 40;
 }
 
 .container img.vec3 {
@@ -58,17 +56,13 @@ main {
     z-index: 5;
 }
 
-.container img.vec6 {
-    position: absolute;
-    top: 110px;
-    z-index: 10;
-}
+
 
 
 .name {
     position: relative;
     text-align: center;
-    top: 20%;
+    top: 40%;
 }
 
 .name .name2 {
@@ -111,7 +105,7 @@ main {
 .button {
     position: absolute;
     top: 90%;
-    left: 17%;
+    left: 11%;
     font-size: 20px;
 }
 
@@ -121,6 +115,7 @@ main {
     color: #fff;
     background-color: #DF3F8C;
     border: 1px solid #fff;
+    font-size: 20px;
 }
 
 .button .message {
@@ -129,4 +124,5 @@ main {
     border-radius: 40px;
     border: 1px solid #838383;
     color: #838383;
+    font-size: 20px;
 }

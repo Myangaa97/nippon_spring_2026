@@ -1,0 +1,15 @@
+img {
+    height: 400px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.force-below {
+    font-size: 1.8em;
+    color: grey;
+    /* Daraagiin mur shiljeh */
+    clear: left;
+}

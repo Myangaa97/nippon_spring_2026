@@ -1,0 +1,12 @@
+.column, .col {
+    float: left;
+    width: 45%;
+    height: 100px;
+    border: 1px solid tomato;
+    background-color: aqua;
+}
+
+.col {
+    width: 30%;
+}
+
