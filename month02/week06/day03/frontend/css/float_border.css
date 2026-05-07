@@ -1,0 +1,13 @@
+.card {
+    float: left; 
+    width: 30%; 
+    margin: 1.66%; 
+    padding: 16px; 
+    border: 1px solid #ddd; 
+}
+
+.clearfix::after { 
+    content: ""; 
+    display: block; 
+    clear: both; 
+}

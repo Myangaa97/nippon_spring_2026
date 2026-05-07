@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.container {
+}
+
+.content {
+    width: 68%;
+    float: left;
+}
+
+.content .gallery {
+    width: 100%;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 45%;
+    float: left;
+    height: 250px;
+}
+
+.gallery img:hover {
+    border: 2px solid black;
+    z-index: 33;
+}
+
+.sidebar {
+    width: 28%;
+    float: right;
+    position: sticky;
+    padding: 20px;
+}
