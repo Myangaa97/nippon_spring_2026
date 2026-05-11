@@ -77,13 +77,13 @@ main {
     margin: 0;
 }
 
-.icon {
+.icons {
     position: absolute;
     top: 70%;
     left: 21%;
 }
 
-.icon img {
+.icons img {
     position: relative;
     margin-right: 30px;
 }
@@ -104,7 +104,7 @@ main {
 
 .button {
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 11%;
     font-size: 20px;
 }
