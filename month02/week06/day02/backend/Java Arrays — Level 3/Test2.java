@@ -14,13 +14,10 @@ public class Test2 {
                     max = nums[i];
                     maxIndex = i;
                 }
-
-                if (i == maxIndex) {
-                    continue;
-                }
             }
 
-            System.out.printf(max + " ");
+            System.out.print(max + " ");
+            nums[maxIndex] = Integer.MIN_VALUE;
             count--;
         }
     }
