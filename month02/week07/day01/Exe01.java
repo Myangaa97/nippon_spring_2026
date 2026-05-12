@@ -21,5 +21,4 @@ public class Exe01 {
         System.out.println(isEven(4));
         System.out.println(circleArea(5));
     }
-
 }

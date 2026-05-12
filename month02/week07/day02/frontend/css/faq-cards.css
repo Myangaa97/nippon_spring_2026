@@ -1,0 +1,26 @@
+.faq-card {
+  background: #fff;
+  border: 1px solid #dde4f0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.faq-q {
+  padding: 14px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  background: #eef4ff;
+}
+
+.faq-a {
+  display: none;
+  padding: 12px 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+details[open] .faq-a {
+  display: block
+}

@@ -1,0 +1,35 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: lightblue;
+    color: black;
+}
+
+.btn-success {
+    background: lightgreen;
+    color: black;
+}
+
+.btn-danger {
+    background: red;
+    color: white;
+}
+
+.btn-outline {
+    background: none;
+    border-color: #0066cc;
+    color: #0066cc;
+}
+
+.btn-sm {
+    padding: 16px;
+    font-size: 16px;
+}

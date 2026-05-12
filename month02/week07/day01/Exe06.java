@@ -15,10 +15,31 @@ public class Exe06 {
         if (n < 0) System.out.println("Negative");
     }
 
+    static double triangleArea(double base, double height) {
+        return 0.5 * base * height;
+    }
+
+    static boolean isPrime (int n) {
+        
+        if (n < 2) {
+            return false;
+        }
+
+        for (int i = 2; i < n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 
     public static void main(String[] args) {
         System.out.println(isPositive(5));
         System.out.println(isNegative(-5));
         sign(5);
+        System.out.println(triangleArea(5, 5));
+        System.out.println(isPrime(11));
+    }
     
 }
