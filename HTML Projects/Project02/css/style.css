@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    font-family: Montserrat sans-serif;
+}
+
+body {
+    background-color: #6f6d6d33;
+}
+
+.container {
+    width: 1440px;
+    margin: 30px auto;
+    background-color: #fff;
+}
+
+.menu {
+    padding: 0 150px;
+    box-shadow: 0px 5px rgb(8 128 0 / 4%);
+    clear: both;
+}
+
+.menu p {
+    float: left;
+    position: relative;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #75C310;
+    margin: 31px 0;
+}
+.menu ul {
+    float: right;
+}
+
+.menu ul .active {
+    color: #000;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-top: 19px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #75C310;
+}
+
+.menu .contact {
+    border-radius: 24px;
+    padding: 11px 36px;
+    background-color: #75C310;
+    color: #fff;
+}
+
+.content {
+    padding: 0 150px;
+}
+
+.hero1 {
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    clear: both;
+}
+
+.hero1-content {
+    position: relative;
+    float: left;
+}
+
+.hero1 img {
+    position: relative;
+    float: right;
+    margin: 90px 0px;
+}
+
+.hero1 img, .hero2 img {
+    width: 514px;
+    height: 513px;
+}
+
+.hero1-content  {
+    position: relative;
+    float: left;
+    padding: 132px 0px;
+    width: 430px;
+}
+
+.hero1-content .title, .hero1-content .title {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 78px;
+    letter-spacing: 0%;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.hero1-content p, .hero2-content p {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    margin-bottom: 40px;
+    width: 80%;
+}
+
+.hero1-content button, .hero2-content button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: #75C310;
+    padding: 17px 34px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+}
+
+.hero2 {
+    position: relative;
+    clear: both;
+}
+
+.hero2-content {
+    float: right;
+}
+
+.hero2 img {
+    position: relative;
+    float: left;
+}

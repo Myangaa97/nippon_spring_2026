@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class StudentGrades {
     static String[] letterGrade(int[] score) {
         String[] stuScores = new String[score.length];
