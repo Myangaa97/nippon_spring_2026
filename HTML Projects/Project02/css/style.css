@@ -1,137 +1,310 @@
+@font-face {
+  font-family: myFont;
+  src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: poppin;
+  src: url(../font/Poppins-Medium.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    color: #000;
-    font-family: Montserrat sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #6f6d6d33;
+    font-family: myFont;
+    background: #ececec;
 }
 
 .container {
     width: 1440px;
-    margin: 30px auto;
-    background-color: #fff;
+    margin: 40px auto;
+    background: #fff;
 }
 
-.menu {
-    padding: 0 150px;
-    box-shadow: 0px 5px rgb(8 128 0 / 4%);
-    clear: both;
+nav {
+    padding: 0 127px;
+    overflow: hidden;
+    box-shadow: 0px 38px 15px rgba(8, 128, 0, 0.01), 
+                0px 21px 13px rgba(8, 128, 0, 0.02), 
+                0px 9px 9px rgba(8, 128, 0, 0.04), 
+                0px 2px 5px rgba(8, 128, 0, 0.04);
 }
 
-.menu p {
+nav .logo {
     float: left;
-    position: relative;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #75C310;
-    margin: 31px 0;
-}
-.menu ul {
-    float: right;
 }
 
-.menu ul .active {
+nav .logo p {
+    font-size: 24px;
+    margin: 28px 0px;
+    font-weight: 700;
+    line-height: 29px;
+    font-style: normal;
+}
+
+nav .logo span {
+    color: #75C310;
+    font-size: 24px;
+}
+
+nav .menu {
+    float: right;
+    margin: 30px 0px;
+}
+
+nav .menu .active {
     color: #000;
 }
 
-.menu ul li {
-    display: inline-block;
-    margin-top: 19px;
-    margin-left: 30px;
+nav .menu a {
+    text-decoration: none;
     font-size: 20px;
     font-weight: 500;
     color: #75C310;
+    padding-right: 44px;
+    line-height: 24px;
 }
 
-.menu .contact {
+nav .menu .btn {
     border-radius: 24px;
-    padding: 11px 36px;
+    padding: 12px 26px;
     background-color: #75C310;
+    font-size: 15px;
+    font-weight: bold;
     color: #fff;
 }
 
-.content {
-    padding: 0 150px;
+.hero1, .hero2, .hero3 {
+    padding: 0 127px;
+    overflow: hidden;
 }
 
-.hero1 {
-    width: 100%;
-    position: relative;
-    margin-top: 30px;
-    clear: both;
-}
-
-.hero1-content {
-    position: relative;
+.hero1 .hero1-content {
     float: left;
+    width: 429px;
+    margin: 180px 0px;
 }
 
-.hero1 img {
-    position: relative;
-    float: right;
-    margin: 90px 0px;
-}
-
-.hero1 img, .hero2 img {
-    width: 514px;
-    height: 513px;
-}
-
-.hero1-content  {
-    position: relative;
-    float: left;
-    padding: 132px 0px;
-    width: 430px;
-}
-
-.hero1-content .title, .hero1-content .title {
-    font-weight: bold;
+.hero1 .hero1-content .title, 
+.hero2 .hero2-content .title,
+.hero3 .hero3-content .title {
+    font-style: normal;
+    font-weight: 700;
     font-size: 64px;
     line-height: 78px;
-    letter-spacing: 0%;
-    margin-bottom: 32px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
-.hero1-content p, .hero2-content p {
-    font-family: Poppins, sans-serif;
+.hero1 .hero1-content .hero1-text {
+    width: 312px;
+}
+
+.hero1 .hero1-content .hero1-text, 
+.hero2 .hero2-content .hero2-text,
+.hero3 .hero3-content .hero3-text {
+    font-family: poppin;
+    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    letter-spacing: 0%;
-    margin-bottom: 40px;
-    width: 80%;
+    margin-bottom: 45px;
 }
 
-.hero1-content button, .hero2-content button {
+.hero1 .hero1-content button, 
+.hero2 .hero2-content button,
+.hero3 .hero3-content button {
     font-weight: 700;
     font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 1px;
+    line-height: 24px;
     text-align: center;
-    background-color: #75C310;
-    padding: 17px 34px;
+    padding: 15px 26px;
     border-radius: 30px;
-    border: none;
+    background-color: #75C310;
     color: #fff;
+    border: none;
 }
 
-.hero2 {
-    position: relative;
-    clear: both;
+.hero1 .hero1-image {
+    float: right;
+    margin: 90px 0px;
+    width: 514px;
 }
 
-.hero2-content {
+.hero1 .hero1-image img, .hero2 .hero2-image img {
+    width: 100%;
+}
+
+.hero2 .hero2-image {
+    float: left;
+    margin: 90px 0px;
+    width: 514px;
+}
+
+.hero2 .hero2-content {
+    float: right;
+    width: 568px;
+    margin: 180px 0px;
+    text-align: right;
+}
+
+.hero2 .hero2-content .hero2-text {
+    width: 382px;
     float: right;
 }
 
-.hero2 img {
+.hero2 .hero2-content button {
+    clear: both;
+    float: right;
+}
+
+.hero3 .hero3-content {
+    text-align: center;
+    margin: 90px 0px;
+}
+
+.hero4 {
+    padding: 108px 30px 272px 30px;
+    overflow: hidden;
+    clear: both;
+}
+
+.hero4 .hero-card {
+    filter: drop-shadow(0px 117px 47px rgba(0, 0, 0, 0.01)) 
+            drop-shadow(0px 66px 39px rgba(0, 0, 0, 0.05)) 
+            drop-shadow(0px 29px 29px rgba(0, 0, 0, 0.09));
+}
+
+.hero4 .hero-card .card-image {
+    position: absolute;
+    width: 227px;
+    height: 227px;
+    z-index: 100;
+}
+
+.hero4 .ceo1 .card-image {
+    left: 90px;
+    top: 0px;
+}
+
+.hero4 .ceo2 .card-image {
+    left: 562px;
+    top: 0px;
+}
+
+.hero4 .ceo3 .card-image {
+    left: 1094px;
+    top: 0px;
+}
+
+.hero4 .hero-card .card-content {
     position: relative;
+    width: 382px;
+    height: 485px;
+    background: #FFFFFF;
+    border: 3px solid #75C310;
+    border-radius: 22px;
     float: left;
+}
+
+.hero4 .ceo1 .card-content {
+    left: 0px;
+    top: 98px;
+}
+
+.hero4 .ceo2 .card-content {
+    left: 117px;
+    top: 98px;
+}
+
+.hero4 .ceo3 .card-content {
+    left: 234px;
+    top: 98px;
+}
+
+.hero4 .hero-card .ceo-name {
+    font-family: myFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    margin-top: 135px;
+}
+
+.hero4 .card-content .ceo-about {
+    font-family: poppin;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding: 42px;
+}
+
+.hero4 .card-content .ceo-info {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer {
+    background-color: #75C310;
+    overflow: hidden;
+    height: 469px;
+}
+
+footer .footer-image {
+    float: left;
+}
+
+footer .footer-content {
+    float: right;
+    margin: 106px 127px 106px 0px;
+    color: #fff;
+    width: 377px;
+    text-align: right;
+}
+
+footer .footer-content .footer-title {
+    font-family: myFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+}
+
+footer .footer-content .footer-address {
+    width: 253px;
+    float: right;
+}
+
+footer .footer-content p {
+    font-family: poppin;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    width: 383px;
+}
+
+footer .footer-content button {
+    align-items: center;
+    padding: 9px 21px;
+    background: #fff;
+    border-radius: 29px;
+    border: none;
+    color: #3F6333;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
 }
