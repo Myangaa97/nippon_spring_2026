@@ -28,7 +28,7 @@ body {
     display: inline;
     float: left;
     color: #fff;
-    background-color: #141313;
+    background-color: #c3c3c3;
 }
 
 .sidebar .logo {
@@ -101,10 +101,30 @@ body {
 /* 1.4. Socials */
 .socials div {
     position: relative;
-    display: inline-block;
-    margin-right: 15px;
+    display: block;
+    margin-bottom: 30px;
 }
 
+.socials .google img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 23;
+}
+
+.socials .icon img {
+    position: absolute;
+    left: 0;
+    top: 53px;
+    z-index: 23;
+}
+
+.socials .instagram img {
+    position: absolute;
+    left: 0;
+    top: 53px;
+    z-index: 23;
+}
 
 /* 1.4. Copyrights */
 .sidebar .copyrights {
