@@ -1,17 +1,23 @@
+@font-face {
+  font-family: myFont;
+  src: url(../font/YakuHanMP-ExtraLight.woff2);
+}
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: "IBM Plex", sans-serif;
+    font-family: "myFont", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
 .container {
-    height: 100%;
+    min-height: 100vh;
     margin: auto;
 }
 
@@ -28,7 +34,8 @@ body {
     display: inline;
     float: left;
     color: #fff;
-    background-color: #c3c3c3;
+    background-color: #141313;
+    min-height: 100vh;
 }
 
 .sidebar .logo {
@@ -79,9 +86,9 @@ body {
     transform: translateY(-50%);
     background: linear-gradient(
         90deg, 
-        #ff9ff3 0%,
-        #ff6b6b 50%, 
-        #feca57 100%        
+        #B86ADF 0%,
+        #FF6C63 50%, 
+        #FFB147 100%        
     );
     z-index: -1;
     transition: width 0.3s ease;
@@ -99,31 +106,51 @@ body {
 }
 
 /* 1.4. Socials */
-.socials div {
+.socials {
+    width: fit-content;
+}
+
+.social {
     position: relative;
-    display: block;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
-.socials .google img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 23;
+.social .bg {
+    width: 40px;
+    height: 40px;
 }
 
-.socials .icon img {
+.social .google, 
+.social .icon,
+.insta .i1,
+.insta .i2,
+.insta .i3 {
     position: absolute;
-    left: 0;
-    top: 53px;
-    z-index: 23;
 }
 
-.socials .instagram img {
-    position: absolute;
-    left: 0;
-    top: 53px;
-    z-index: 23;
+.social .google {
+    top: 13px;
+    left: 10px;
+}
+
+.social .icon {
+    top: 11px;
+    left: 11px;
+}
+
+.insta .i1 {
+    top: 15px;
+    left: 16px;
+}
+
+.insta .i2 {
+    top: 10px;
+    left: 11px;
+}
+
+.insta .i3 {
+    top: 13px;
+    left: 25px;
 }
 
 /* 1.4. Copyrights */
@@ -135,7 +162,56 @@ body {
 }
 
 /* 2. --- Main Content Style ----*/
-.main-contnent {
+.main-content {
     width: 80%;
+    position: relative;
+    background-color: aqua;
     float: left;
+    min-height: 100vh;
+}
+
+.content-inner {
+    position: relative;
+    height: 100vh;
+}
+
+.content-inner .content-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-info .info-name {
+    width: 598px;
+    font-weight: 400;
+    font-size: 102px;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.content-info p span {
+    font-weight: 700;
+}
+
+.content-info p {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.content-info {
+    width: 597px;
+    padding-left: 52px;
+}
+
+.content-info .btn {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px;
+    background-color: #141313;
+    color: #fff;
+    width: 258px;
+    margin-top: 18px;
 }
