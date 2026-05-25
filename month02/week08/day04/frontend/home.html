@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>iCode Blog</title>
+  <style>
+    /* ===== RESET ===== */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      padding-top: 65px;
+      color: #333;
+    }
+
+    /* ===== FIXED HEADER ===== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: #1a237e;
+      color: white;
+      display: block;
+      z-index: 1000;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+    .site-title {
+      float: left;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .nav-links { float: right; }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    .nav-links a:hover { text-decoration: underline; }
+    .header-inner::after { content: ""; display: block; clear: both; }
+
+    /* ===== CONTAINER ===== */
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .container::after { content: ""; display: block; clear: both; }
+
+    /* ===== MAIN ===== */
+    .main {
+      float: left;
+      width: 68%;
+    }
+
+    /* ===== ARTICLE CARDS ===== */
+    .article-card {
+      position: relative;
+      background: white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .card-img {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+    .card-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: #e53935;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+    .card-body { padding: 20px; }
+    .card-body h2 { font-size: 18px; margin-bottom: 8px; }
+    .card-body p  { color: #666; font-size: 14px; line-height: 1.6; }
+    .card-meta    { font-size: 12px; color: #999; margin: 8px 0; }
+    .read-more    {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #1a237e;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 13px;
+    }
+    .read-more:hover { background: #283593; }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      float: right;
+      width: 28%;
+    }
+    .widget {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .widget h3 {
+      font-size: 15px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #1a237e;
+      color: #1a237e;
+    }
+    .widget-author { text-align: center; }
+    .author-avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #667eea;
+      color: white;
+      font-size: 28px;
+      line-height: 70px;
+      margin: 0 auto 10px;
+    }
+    .category-list { list-style: none; }
+    .category-list li {
+      padding: 6px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+    .category-list li:last-child { border: none; }
+    .tag {
+      display: inline-block;
+      background: #e8eaf6;
+      color: #1a237e;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      margin: 3px 2px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      clear: both;
+      background: #1a237e;
+      color: white;
+      padding: 30px 20px;
+      margin-top: 30px;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .footer-col {
+      float: left;
+      width: 31%;
+      margin-right: 2%;
+    }
+    .footer-col:last-child { margin-right: 0; }
+    .footer-col h4 { margin-bottom: 10px; }
+    .footer-col p, .footer-col a {
+      font-size: 13px;
+      color: #9fa8da;
+      line-height: 1.8;
+      text-decoration: none;
+      display: block;
+    }
+    .footer-inner::after { content: ""; display: block; clear: both; }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid #283593;
+      font-size: 12px;
+      color: #9fa8da;
+    }
+
+    /* ===== BACK TO TOP ===== */
+    .back-to-top {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #1a237e;
+      color: white;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 44px;
+      font-size: 20px;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .back-to-top:hover { background: #283593; }</style>
+</head>
+<body>
+
+<!-- FIXED HEADER -->
+<header id="top">
+  <div class="header-inner">
+    <span class="site-title">iCode Blog</span>
+    <nav class="nav-links">
+      <a href="#">Нүүр</a>
+      <a href="#">Тухай</a>
+      <a href="#">Холбоо барих</a>
+    </nav>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- LEFT: Main articles -->
+  <div class="main">
+    <div class="article-card">
+      <div class="card-img"></div>
+      <span class="card-badge">ШИНЭ</span>
+      <div class="card-body">
+        <p class="card-meta">2024-04-15 | Java</p>
+        <h2>OOP: Класс ба Объект</h2>
+        <p>Java дахь объект хандалтат програмчлалын суурь ойлголтууд — класс, объект, constructor болон this keyword-ийн тухай.</p>
+        <a href="#" class="read-more">Унших &rarr;</a>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="card-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+      <div class="card-body">
+        <p class="card-meta">2024-04-10 | ITPEC</p>
+        <h2>Stack ба Queue: Өгөгдлийн Бүтэц</h2>
+        <p>LIFO ба FIFO зарчмаар ажилладаг Stack, Queue өгөгдлийн бүтцийг алхмаар судална.</p>
+        <a href="#" class="read-more">Унших &rarr;</a>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="card-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+      <span class="card-badge" style="background: #f57c00;">ОНЦЛОХ</span>
+      <div class="card-body">
+        <p class="card-meta">2024-04-05 | CSS</p>
+        <h2>CSS Float + Position: Хосолсон Layout</h2>
+        <p>Float ашиглан sidebar, fixed header, absolute badge зэргийг нэгтгэсэн орчин үеийн вэб хуудас бүтээнэ.</p>
+        <a href="#" class="read-more">Унших &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Sidebar -->
+  <div class="sidebar">
+    <div class="widget widget-author">
+      <h3>Зохиогч</h3>
+      <div class="author-avatar">Б</div>
+      <strong>Батаа Мөнхбат</strong>
+      <p style="color:#666; font-size:13px; margin-top:5px;">Java хөгжүүлэгч, iCode багш</p>
+    </div>
+
+    <div class="widget">
+      <h3>Ангилал</h3>
+      <ul class="category-list">
+        <li>Java OOP (12)</li>
+        <li>ITPEC (8)</li>
+        <li>CSS Layout (6)</li>
+        <li>Spring Boot (4)</li>
+        <li>Алгоритм (10)</li>
+      </ul>
+    </div>
+
+    <div class="widget">
+      <h3>Таг</h3>
+      <span class="tag">Java</span>
+      <span class="tag">OOP</span>
+      <span class="tag">Stack</span>
+      <span class="tag">CSS</span>
+      <span class="tag">BST</span>
+      <span class="tag">Float</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>iCode Blog</h4>
+      <p>Java Fullstack хөгжүүлэгч бэлтгэх сургалтын контент.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Холбоос</h4>
+      <a href="#">Нүүр хуудас</a>
+      <a href="#">Java хичээлүүд</a>
+      <a href="#">CSS хичээлүүд</a>
+    </div>
+    <div class="footer-col">
+      <h4>Холбоо барих</h4>
+      <a href="#">info@icode.mn</a>
+      <a href="#">@icode_mn</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2024 iCode Academy. Бүх эрх хуулиар хамгаалагдсан.
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<a href="#top" class="back-to-top">&#8679;</a>
+
+</body>
+</html>

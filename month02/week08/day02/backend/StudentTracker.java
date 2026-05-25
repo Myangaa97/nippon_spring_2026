@@ -17,6 +17,7 @@ public class StudentTracker {
             sum = sum + gpa[i];
         }
         return sum / gpa.length;
+
     }
 
     void gpa() {
