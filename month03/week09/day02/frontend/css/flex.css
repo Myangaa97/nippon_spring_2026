@@ -1,0 +1,17 @@
+.flex-container {
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-content: space-between;
+    gap: 20px;
+    display: flex;
+    background-color: #8c8c8c;
+}
+
+.flex-container .flex-children {
+    background-color: tomato;
+    color: #fff;
+    font-size: 1.6em;
+    height: 250px;
+    width: 250px;
+}

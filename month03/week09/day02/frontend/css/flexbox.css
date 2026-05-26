@@ -1,0 +1,38 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 100px;
+    background-color: #d8d8d8;
+    height: 60vh;
+    align-items: center;
+}
+
+.flex-container .flex-children {
+    background-color: tomato;
+    font-size: 1.2em;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-children.red {
+    background-color: palevioletred;
+    order: 1;
+}
+
+.flex-children.green {
+    background-color: lightgreen;
+    order: 2;
+}
+
+.flex-children.blue {
+    background-color: lightskyblue;
+    order: 0;
+}
+
+.flex-children.negative {
+    order: -1;
+}

@@ -14,14 +14,20 @@ public class BankSystem {
         }
 
         void deposit(double amount) {
-            Scanner sc = new Scanner(System.in);
-            System.out.printf("Enter Deposit : ");
-            amount = sc.nextDouble();
             if (amount <= 0) {
-                System.out.printf("Error");
+                System.out.println("Error");
             } else {
                 transactionCount++;
-                System.out.printf("Орлого : " + this.amount + " | " + "Үлдэгдэл : " + (balance + amount));
+                System.out.println("Орлого : " + amount + " | " + "Үлдэгдэл : " + (balance + amount));
+            }
+        }
+
+        boolean withdraw(double amount) {
+            if (amount > 0) {
+                System.out.println("Error");
+            } else {
+                transactionCount++;
+                System.out.println("Орлого : " + amount + " | " + "Үлдэгдэл : " + (balance - amount));
             }
         }
 
@@ -36,7 +42,5 @@ public class BankSystem {
         System.out.println("=== iCode Банкны Систем ===\n");
         System.out.println("--- Дансууд үүсгэгдлээ ---");
         acc1.deposit(20000);
-        acc1.tr
-
     }
 }
