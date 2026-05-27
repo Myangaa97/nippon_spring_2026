@@ -139,7 +139,7 @@ section .content-img img {
 #menu .menu-text p,
 #blog .blog-text p {
     width: 50%;
-    font-weight: 400;
+    font-weight: 350;
     font-size: 16px;
     text-align: justify;
     line-height: 150%;
@@ -230,7 +230,7 @@ section .content-img img {
 
 .blog-item .date {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 350;
     color: #583101;
     margin-bottom: -20px;
 }
@@ -248,7 +248,7 @@ section .content-img img {
 .blog-item .content2 {
     min-height: 92px;
     text-align: start;
-    font-weight: 400;
+    font-weight: 350;
     line-height: 24px;
     font-size: 16px;
 }
@@ -259,49 +259,69 @@ section .content-img img {
     padding: 8px 16px;
     width: fit-content;
     white-space: nowrap;
+    font-weight: 350;
 }
 
 footer {
     width: 100%;
     background-color: #432818;
-    color: #F3D5B5;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     padding: 56px 80px;
     gap: 40px;
 }
-footer a {
-    color: #F3D5B5;
-}
 
 #footer .footer-content {
-    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
 }
 
 #footer .follow,
 #footer .info,
 #footer .contact,
-#footer .footer-content {
+#footer .footer-col {
     display: flex;
     flex-direction: column;
+    padding-right: 60px;
 }
 
-footer > div {
-    width: 23%;
+#footer .footer-col {
+    display: flex;
+    align-items: flex-start;
+    width: 25%;
 }
 
-footer .log {
+.footer-col a,
+.footer-col p {
+    color: #FFF4E8;
+    font-family: var(--content-font);
+    font-weight: 350;
+    font-size: 14px;
+    letter-spacing: 0%;
+    text-align: start;
+}
+
+#footer .footer-col .title {
+    font-family: var(--title-font);
+    color: #F3D5B5;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    min-height: 44px;
+}
+
+#footer .footer-col .log {
     display: flex;
     align-items: center;
-    gap: 10px;
-
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+    gap: 10px;
+    font-family: var(--logo-font);
 }
 
-#footer .follow .socials {
+#footer .socials {
     display: flex;
-    gap: 16px;
+    gap: 30px;
     align-items: center;
 }

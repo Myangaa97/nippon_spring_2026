@@ -7,7 +7,7 @@ public class Person {
         this.age = age;
     }
 
-    public void printInfo() {
+    public void introduce() {
         System.out.println("My name is " + name + " . " + age + " years old.");
     }
 

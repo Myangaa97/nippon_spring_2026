@@ -9,12 +9,12 @@ public class Student extends Person {
     }
 
     @Override
-    public void printInfo() {
+    public void introduce() {
         System.out
                 .println("My name is " + getName() + ". I am " + getAge() + " years old. " + major + ". GPA : " + gpa);
     }
 
     boolean isHonors() {
-        return true;
+        return gpa >= 3.5;
     }
 }
