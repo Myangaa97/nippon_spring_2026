@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">iCode Dashboard</div>
+        <div class="header-right">
+            <input class="search" type="text" placeholder="Хайх...">
+            <button class="icon-btn">🔔</button>
+            <button class="icon-btn">👤</button>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <aside class="sidebar">
+            <div class="nav-label">Үндсэн</div>
+            <div class="nav-item active">📊 Хяналтын самбар</div>
+            <div class="nav-item">👥 Оюутнууд</div>
+            <div class="nav-item">📚 Хичээлүүд</div>
+            <div class="nav-label">Системд</div>
+            <div class="nav-item">⚙️ Тохиргоо</div>
+            <div class="nav-item">🚪 Гарах</div>
+        </aside>
+
+        <main class="content">
+            <h2 class="page-title">Хяналтын Самбар</h2>
+
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-label">Нийт оюутан</div>
+                    <div class="stat-value">247</div>
+                    <div class="stat-change">+12 энэ долоо хоног</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Идэвхтэй хичээл</div>
+                    <div class="stat-value">9</div>
+                    <div class="stat-change">Долоо хоног 09</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Дуусгасан даалгавар</div>
+                    <div class="stat-value">1,284</div>
+                    <div class="stat-change">+89 өнөөдөр</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Дундаж оноо</div>
+                    <div class="stat-value">87%</div>
+                    <div class="stat-change">+2.3% өмнөх долоо хоногоос</div>
+                </div>
+            </div>
+
+            <div class="chart-area">
+                <div class="bar" style="height:40%"></div>
+                <div class="bar" style="height:65%"></div>
+                <div class="bar" style="height:50%"></div>
+                <div class="bar" style="height:80%"></div>
+                <div class="bar" style="height:70%"></div>
+                <div class="bar" style="height:90%"></div>
+                <div class="bar" style="height:75%"></div>
+            </div>
+
+            <div class="recent">
+                <h3>Сүүлийн Үйл Ажиллагаа</h3>
+                <div class="recent-item">
+                    <span>Батаа — Week 09 MCQ дуусгав</span>
+                    <span class="tag">Java OOP</span>
+                </div>
+                <div class="recent-item">
+                    <span>Сарнай — CSS Flexbox төсөл илгээв</span>
+                    <span class="tag">CSS</span>
+                </div>
+                <div class="recent-item">
+                    <span>Дорж — BFS дасгал илгээв</span>
+                    <span class="tag">ITPEC</span>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
