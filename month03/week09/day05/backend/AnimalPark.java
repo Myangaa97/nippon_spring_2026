@@ -239,7 +239,10 @@ public class AnimalPark {
         }
 
         void showResidents() {
-
+            System.out.println("\n=== " + name + " дахь амьтад ===");
+            for (int i = 0; i < currentSize; i++) {
+                residents[i].showProfile();
+            }
         }
 
         boolean isFull() {
@@ -293,9 +296,11 @@ public class AnimalPark {
 
         // ENCLOSURE (Тор)
 
-        Enclosure01 enclosure01 = new Enclosure01("Hi", 10);
-        enclosure01.addAnimal(park[5]);
-
+        Enclosure01 enclosure01 = new Enclosure01("Hi", 4);
+        for (Animal a : park) {
+            enclosure01.addAnimal(a);
+        }
+        enclosure01.showResidents();
     }
 
 }
