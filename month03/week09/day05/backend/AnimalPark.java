@@ -269,8 +269,9 @@ public class AnimalPark {
 
         // Polymorphism
         System.out.println("\n=== Дуу гаргах ===");
-        for (Animal a : park)
+        for (Animal a : park) {
             a.sound();
+        }
 
         // Тусгай үйлдлүүд
         System.out.println("\n=== Тусгай үйлдлүүд ===");
