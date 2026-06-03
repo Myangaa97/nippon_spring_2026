@@ -148,7 +148,7 @@ public class AnimalPark {
         }
 
         void eatLeaves() {
-            System.out.println(name + " өндөр модны навч идэж байна. 🍃");
+            System.out.println(name + " өндөр модны навч идэж байна.");
         }
 
         @Override
