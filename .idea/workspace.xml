@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb597314-9845-4579-bc9d-3deba8c99a5a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Elephant.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Elephant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Giraffe.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Giraffe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Lion.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Lion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Penguin.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Penguin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Bus.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Bus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/MainTransport.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/MainTransport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Train.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Train.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Transport.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Transport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Elephant.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Elephant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Enclosure.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Enclosure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Giraffe.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Giraffe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Lion.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Lion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Penguin.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Penguin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$keeper.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$keeper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="3EfBusQLjwovP4KB99p2Y0yGuSq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/nippon/Desktop/nippon_spring_2026"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb597314-9845-4579-bc9d-3deba8c99a5a" name="Changes" comment="" />
+      <created>1780559969923</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780559969923</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
