@@ -188,39 +188,13 @@ public class AnimalPark {
         System.out.println("=====================================");
     }
 
-    static class Keeper {
-        String name;
-        Animal[] assigned;
-
-        Keeper(String name, Animal[] assigned) {
-            this.name = name;
-            this.assigned = assigned;
-        }
-
-        void feedAssigned(String food) {
-            System.out.println("\n=== " + name + " амьтдаа хооллож байна ===");
-
-            for (Animal a : assigned) {
-                a.eat(food);
-            }
-        }
-
-        void checkAllHealth() {
-            System.out.println("\n=== " + name + " эрүүл мэнд шалгаж байна ===");
-
-            for (Animal a : assigned) {
-                a.checkup();
-            }
-        }
-    }
-
-    static class Enclosure01 {
+    static class Enclosure {
         String name;
         Animal[] residents;
         int maxCapacity;
         int currentSize;
 
-        Enclosure01(String name, int maxCapacity) {
+        Enclosure(String name, int maxCapacity) {
             this.name = name;
             this.maxCapacity = maxCapacity;
             this.residents = new Animal[maxCapacity];
@@ -229,12 +203,12 @@ public class AnimalPark {
 
         boolean addAnimal(Animal a) {
             if (isFull()) {
-                System.out.println(name + " парк дүүрсэн тул " + a.name + "-ийг нэмэх боломжгүй!");
+                System.out.println(name + " дүүрсэн тул " + a.name + "-ийг нэмэх боломжгүй!");
                 return false;
             }
             residents[currentSize] = a;
             currentSize++;
-            System.out.println(a.name + " (" + a.getType() + ") " + name + " паркд орлоо.");
+            System.out.println(a.name + " (" + a.getType() + ") " + " үүрэнд орлоо.");
             return true;
         }
 
@@ -243,6 +217,8 @@ public class AnimalPark {
             for (int i = 0; i < currentSize; i++) {
                 residents[i].showProfile();
             }
+            System.out.println("-------------------");
+            System.out.println("Үүрний багтаамж: " + maxCapacity);
         }
 
         boolean isFull() {
@@ -250,10 +226,42 @@ public class AnimalPark {
         }
     }
 
+    static class Keeper {
+        String name;
+        Enclosure[] assigned;
+
+        Keeper(String name, Enclosure[] assigned) {
+            this.name = name;
+            this.assigned = assigned;
+        }
+
+        void feedAssigned(String food) {
+            System.out.println("\n=== " + name + " амьтдаа хооллож байна ===");
+
+            for (Enclosure enclosure : assigned) {
+                for (int i = 0; i < enclosure.currentSize; i++) {
+                    enclosure.residents[i].eat(food);
+                }
+            }
+        }
+
+        void checkAllHealth() {
+            System.out.println("\n=== " + name + " эрүүл мэнд шалгаж байна ===");
+
+            for (Enclosure enclosure : assigned) {
+                for (int i = 0; i < enclosure.currentSize; i++) {
+                    enclosure.residents[i].checkup();
+                }
+
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Animal[] park = {
                 new Lion("Симба", 5, 180, 25),
                 new Lion("Муфаса", 8, 210, 30),
+                new Lion("Маса", 6, 220, 30),
                 new Elephant("Думбо", 12, 4500, 180),
                 new Penguin("Коваальски", 3, 4.5),
                 new Penguin("Рико", 4, 5.2),
@@ -289,18 +297,31 @@ public class AnimalPark {
                 g.eatLeaves();
         }
 
+        // ENCLOSURE (Тор)
+        System.out.println("\n=== Үүр хувиарлалт ===");
+        Enclosure lionEnclosure = new Enclosure("Арслан Үүр", 2);
+        Enclosure elephantEnclosure = new Enclosure("Зааны Үүр", 2);
+        Enclosure penguinEnclosure = new Enclosure("Пингвин Үүр", 2);
+        Enclosure giraffeEnclosure = new Enclosure("Анаашны Үүр", 2);
+        for (Animal a : park) {
+            if (a instanceof Lion l)
+                lionEnclosure.addAnimal(l);
+            if (a instanceof Elephant e)
+                elephantEnclosure.addAnimal(e);
+            if (a instanceof Penguin p)
+                penguinEnclosure.addAnimal(p);
+            if (a instanceof Giraffe g)
+                giraffeEnclosure.addAnimal(g);
+        }
+        lionEnclosure.showResidents();
+        elephantEnclosure.showResidents();
+        penguinEnclosure.showResidents();
+        giraffeEnclosure.showResidents();
+
         // Keeper (Асрагч)
-        Keeper keepers = new Keeper("Мянгаа", new Animal[] { park[0], park[1] });
+        Keeper keepers = new Keeper("Мянгаа", new Enclosure[] { lionEnclosure });
         keepers.feedAssigned("мах");
         keepers.checkAllHealth();
-
-        // ENCLOSURE (Тор)
-
-        Enclosure01 enclosure01 = new Enclosure01("Hi", 4);
-        for (Animal a : park) {
-            enclosure01.addAnimal(a);
-        }
-        enclosure01.showResidents();
     }
 
 }
