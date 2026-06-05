@@ -1,3 +1,5 @@
+package com.app;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -48,7 +50,7 @@ class ShapeTest {
         assertFalse(c1.area() > c2.area());
     }
 
-     @Test
+    @Test
     void testDescription() {
         Square square = new Square(2);
         String result = square.description();

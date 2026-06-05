@@ -1,3 +1,5 @@
+package com.app;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -22,21 +24,23 @@ class VehicleTest {
     @Test
     void testBicycle() {
         Bicycle mountainBike = new Bicycle("Human Power", 30);
-        assertTrue(mountainBike.describe().contains("This bicycle runs on Human Power and has a maximum speed of 30 km/h."));
+        assertTrue(mountainBike.describe()
+                .contains("This bicycle runs on Human Power and has a maximum speed of 30 km/h."));
         Bicycle roadBike = new Bicycle("Human Power", 40);
-        assertTrue(roadBike.describe().contains("This bicycle runs on Human Power and has a maximum speed of 40 km/h."));
+        assertTrue(
+                roadBike.describe().contains("This bicycle runs on Human Power and has a maximum speed of 40 km/h."));
     }
-    
+
     @Test
     void testPolymorphism() {
         Vehicle[] vehicles = {
-            new Bicycle("Human Power", 30),
-            new ElectricCar("240V", 322),
-            new ElectricCar("120V", 190),
-            new GasCar("Gasoline", 250),
-            new GasCar("Gasoline", 180),
-            new Bicycle("Human Power", 30)
-            };
+                new Bicycle("Human Power", 30),
+                new ElectricCar("240V", 322),
+                new ElectricCar("120V", 190),
+                new GasCar("Gasoline", 250),
+                new GasCar("Gasoline", 180),
+                new Bicycle("Human Power", 30)
+        };
         for (Vehicle v : vehicles) {
             String description = v.describe();
             assertNotNull(description);

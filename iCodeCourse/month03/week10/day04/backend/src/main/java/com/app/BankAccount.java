@@ -8,10 +8,12 @@ abstract class BankAccount {
     }
 
     void deposit(double amount) {
-        if(amount >0) balance += amount;
+        if (amount > 0)
+            balance += amount;
     }
 
     abstract void withdraw(double amount);
+
     abstract double monthlyFee();
 
     double getBalance() {
@@ -36,10 +38,10 @@ class SavingsAccount extends BankAccount {
 
     @Override
     void withdraw(double amount) {
-        if(balance - amount < miniBalance) {
+        if (balance - amount < miniBalance) {
             throw new IllegalArgumentException("Would go below minimum balance");
         }
-        balance§-= amount;
+        balance -= amount;
     }
 
     @Override
@@ -51,6 +53,7 @@ class SavingsAccount extends BankAccount {
 class CheckingAccount extends BankAccount {
     private int freeTransactions;
     private int transactionCount;
+
     public CheckingAccount(String owner, double initialBalance, int freeTransactions) {
         super(owner, initialBalance);
         this.freeTransactions = freeTransactions;
@@ -59,7 +62,7 @@ class CheckingAccount extends BankAccount {
 
     @Override
     void withdraw(double amount) {
-        if(transactionCount >= freeTransactions) {
+        if (transactionCount >= freeTransactions) {
             balance -= 500;
         }
         balance -= amount;
