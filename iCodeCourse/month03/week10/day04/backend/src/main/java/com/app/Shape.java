@@ -1,4 +1,8 @@
 package com.app;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 12a385a521493a3652251606f0821a392734a94f
 abstract class Shape {
     abstract double area();
 

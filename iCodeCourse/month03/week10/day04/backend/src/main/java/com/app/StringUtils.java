@@ -28,9 +28,13 @@ public class StringUtils {
                 palindrome = false;
             }
         }
+<<<<<<< HEAD
         if (palindrome)
             return true;
         return false;
+=======
+        return palindrome;
+>>>>>>> 12a385a521493a3652251606f0821a392734a94f
     }
 
     public static String capitalize(String text) {

@@ -1,6 +1,10 @@
 package com.app;
 
+<<<<<<< HEAD
 abstract class Vehicle {
+=======
+public abstract class Vehicle {
+>>>>>>> 12a385a521493a3652251606f0821a392734a94f
     protected String fuelType;
     protected int maxSpeed;
 

@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f3;
+    padding: 20px;
+    margin: 0;
+}
+
+.card-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-top: 4px solid #9b59b6;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+    /* Syntax: flex-grow | flex-shrink | flex-basics */
+    flex: 1 1 280px;
+    max-width: 400px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #8e44ad;
+}
