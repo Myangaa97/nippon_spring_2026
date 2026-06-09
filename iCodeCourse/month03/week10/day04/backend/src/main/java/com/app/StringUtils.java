@@ -22,12 +22,15 @@ public class StringUtils {
     }
 
     public static boolean isPalindrome(String text) {
+        boolean palindrome = true;
         for (int i = 0; i < text.length() / 2; i++) {
             if (text.charAt(i) != text.charAt(text.length() - 1 - i)) {
                 palindrome = false;
             }
         }
-        return true;
+        if (palindrome)
+            return true;
+        return false;
     }
 
     public static String capitalize(String text) {

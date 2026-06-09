@@ -56,7 +56,7 @@ public class AnimalPark {
 
         @Override
         void sound() {
-            System.out.println(name + ": Аарр!! 🦁");
+            System.out.println(name + ": Аарр!!");
         }
 
         @Override
@@ -86,7 +86,7 @@ public class AnimalPark {
 
         @Override
         void sound() {
-            System.out.println(name + ": Пүүү! 🐘");
+            System.out.println(name + ": Пүүү!");
         }
 
         @Override
@@ -115,7 +115,7 @@ public class AnimalPark {
 
         @Override
         void sound() {
-            System.out.println(name + ": Хааа хааа! 🐧");
+            System.out.println(name + ": Хааа хааа!");
         }
 
         @Override

@@ -1,3 +1,5 @@
+package com.app;
+
 abstract class Vehicle {
     protected String fuelType;
     protected int maxSpeed;
@@ -12,8 +14,8 @@ abstract class Vehicle {
 }
 
 class ElectricCar extends Vehicle {
-    
-     public ElectricCar(String fuelType, int maxSpeed) {
+
+    public ElectricCar(String fuelType, int maxSpeed) {
         super(fuelType, maxSpeed);
     }
 
@@ -25,8 +27,8 @@ class ElectricCar extends Vehicle {
 }
 
 class GasCar extends Vehicle {
-    
-     public GasCar(String fuelType, int maxSpeed) {
+
+    public GasCar(String fuelType, int maxSpeed) {
         super(fuelType, maxSpeed);
     }
 
@@ -38,7 +40,7 @@ class GasCar extends Vehicle {
 }
 
 class Bicycle extends Vehicle {
-    
+
     public Bicycle(String fuelType, int maxSpeed) {
         super(fuelType, maxSpeed);
     }

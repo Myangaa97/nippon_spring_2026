@@ -1,5 +1,7 @@
+package com.app;
 abstract class Shape {
     abstract double area();
+
     abstract double perimeter();
 
     boolean isLargerThan(Shape other) {

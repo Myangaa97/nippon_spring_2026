@@ -2,7 +2,7 @@ package com.app;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MathUtilTest {
     @Test
@@ -12,7 +12,7 @@ public class MathUtilTest {
 
     @Test
     public void testPrime() {
-        assertEquals(true, MathUtil.isPrime(3));
+        assertTrue(MathUtil.isPrime(3));
     }
 
     @Test
