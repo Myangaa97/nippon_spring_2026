@@ -1,15 +1,18 @@
+package com.app;
+
 abstract class BankAccount {
     protected String owner;
     protected double balance;
 
-    public BankAccount(String owner, double balance) {
+    public BankAccount(String owner, double initialBalance) {
         this.owner = owner;
         this.balance = initialBalance;
     }
 
     void deposit(double amount) {
-        if (amount > 0)
+        if (amount > 0) {
             balance += amount;
+        }
     }
 
     abstract void withdraw(double amount);
@@ -31,6 +34,8 @@ abstract class BankAccount {
 }
 
 class SavingsAccount extends BankAccount {
+    double miniBalance;
+
     public SavingsAccount(String owner, double initialBalance, double miniBalance) {
         super(owner, initialBalance);
         this.miniBalance = miniBalance;
@@ -38,9 +43,10 @@ class SavingsAccount extends BankAccount {
 
     @Override
     void withdraw(double amount) {
-        if (balance - amount < miniBalance) {
-            throw new IllegalArgumentException("Would go below minimum balance");
+        if (amount > miniBalance) {
+            throw new IllegalStateException("Insufficient funds");
         }
+
         balance -= amount;
     }
 

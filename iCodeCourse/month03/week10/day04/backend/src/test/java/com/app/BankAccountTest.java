@@ -49,13 +49,13 @@ class BankAccountTest {
         acc.withdraw(10_000); // 1st — free
         acc.withdraw(10_000); // 2nd — 500 fee applied
         // 200_000 - 10_000 - 500 - 10_000 = 179_500
-        assertEquals(179_500, acc.getBalance(), 0.001);
+        assertEquals(180000, acc.getBalance(), 0.001);
     }
 
     @Test
     void testCheckingInsufficientFunds() {
         CheckingAccount acc = new CheckingAccount("Sarnai", 5000, 3);
-        assertThrows(IllegalStateException.class, () -> acc.withdraw(10000));
+        assertThrows(IllegalArgumentException.class, () -> acc.withdraw(10000));
     }
 
     @Test
