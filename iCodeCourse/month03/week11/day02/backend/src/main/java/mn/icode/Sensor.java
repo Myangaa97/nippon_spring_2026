@@ -46,7 +46,7 @@ class PressureSensor implements Sensor {
 	}
 	
     @Override public String unit() {
-    	return "nPa";
+    	return "hPa";
     }
 }
 
