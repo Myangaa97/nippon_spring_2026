@@ -1,8 +1,7 @@
 package com.app;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class StringUtilsTest {
     @Test
@@ -11,8 +10,7 @@ public class StringUtilsTest {
     }
 
     @Test
-    public void testPalindrome() {
-        assertEquals(false, StringUtils.isPalindrome("Hello"));
+    public void testPalindrome() { assertFalse(StringUtils.isPalindrome("Hello"));
     }
 
     @Test

@@ -1,26 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fb597314-9845-4579-bc9d-3deba8c99a5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Home Course/UnshZar-Java/src/main/UnshZar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home Course/UnshZar-Java/src/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home Course/UnshZar-Java/src/model/Novel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home Course/UnshZar-Java/src/model/TextBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home Course/UnshZar-Java/web/admin/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home Course/UnshZar-Java/web/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home Course/UnshZar-Java/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home Course/Extends/AnimalExte.class" beforeDir="false" afterPath="$PROJECT_DIR$/Home Course/Extends/AnimalExte.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Animal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Elephant.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Elephant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Giraffe.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Giraffe.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Lion.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Lion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Penguin.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark$Penguin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Bus.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Bus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/MainTransport.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/MainTransport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Train.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Train.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Transport.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Transport System v.2/Transport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Elephant.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Elephant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Enclosure.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Enclosure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Giraffe.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Giraffe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Lion.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Lion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Penguin.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$Penguin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$keeper.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark$keeper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week09/day05/backend/AnimalPark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA Projects/Animal Park/AnimalPark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/main/java/com/app/BankAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/main/java/com/app/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/main/java/com/app/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/main/java/com/app/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/main/java/com/app/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/main/java/com/app/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/main/java/com/app/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/test/java/com/app/BankAccountTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/test/java/com/app/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/test/java/com/app/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/test/java/com/app/MathUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/test/java/com/app/MathUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/test/java/com/app/ShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/test/java/com/app/ShapeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/test/java/com/app/StringUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/test/java/com/app/StringUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/test/java/com/app/VehicleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/src/test/java/com/app/VehicleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/BankAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Bicycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Bicycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/CheckingAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/CheckingAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/ElectricCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/ElectricCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/GasCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/GasCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/MathUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/MathUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/SavingsAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/SavingsAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/StringUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/StringUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/classes/com/app/Vehicle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/surefire-reports/TEST-com.app.CalculatorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/surefire-reports/TEST-com.app.CalculatorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/surefire-reports/com.app.CalculatorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/surefire-reports/com.app.CalculatorTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/test-classes/com/app/BankAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/test-classes/com/app/BankAccountTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/test-classes/com/app/CalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/test-classes/com/app/CalculatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/test-classes/com/app/MathUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/test-classes/com/app/MathUtilTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/test-classes/com/app/ShapeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/test-classes/com/app/ShapeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/test-classes/com/app/StringUtilsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/test-classes/com/app/StringUtilsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/test-classes/com/app/VehicleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/iCodeCourse/month03/week10/day04/backend/target/test-classes/com/app/VehicleTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,27 +68,147 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3EfBusQLjwovP4KB99p2Y0yGuSq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/nippon/Desktop/nippon_spring_2026"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.CalculatorTest.testMultiplyMethod.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShapeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShapeTest.testSquareArea.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShapeTest.testSquarePerimeter.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StringUtilsTest.testPalindrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VehicleTest.testGasCar (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VehicleTest.testGasCar.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LENOVO/Documents/GitHub/nippon_spring_2026&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Documents\GitHub\nippon_spring_2026\Home Course\UnshZar-Java\web\admin" />
+      <recent name="C:\Users\LENOVO\Documents\GitHub\nippon_spring_2026\Home Course\UnshZar-Java\src\main" />
+      <recent name="C:\Users\LENOVO\Documents\GitHub\nippon_spring_2026\Home Course\UnshZar-Java\src" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="Maven → Reload All Projects" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.StringUtilsTest.testPalindrome">
+    <configuration name="CalculatorTest.testMultiplyMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.app" />
+      <option name="MAIN_CLASS_NAME" value="com.app.CalculatorTest" />
+      <option name="METHOD_NAME" value="testMultiplyMethod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShapeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.app" />
+      <option name="MAIN_CLASS_NAME" value="com.app.ShapeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShapeTest.testSquareArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.app" />
+      <option name="MAIN_CLASS_NAME" value="com.app.ShapeTest" />
+      <option name="METHOD_NAME" value="testSquareArea" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShapeTest.testSquarePerimeter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.app" />
+      <option name="MAIN_CLASS_NAME" value="com.app.ShapeTest" />
+      <option name="METHOD_NAME" value="testSquarePerimeter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringUtilsTest.testPalindrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.app" />
+      <option name="MAIN_CLASS_NAME" value="com.app.StringUtilsTest" />
+      <option name="METHOD_NAME" value="testPalindrome" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StringUtilsTest.testPalindrome" />
+        <item itemvalue="JUnit.ShapeTest.testSquarePerimeter" />
+        <item itemvalue="JUnit.ShapeTest" />
+        <item itemvalue="JUnit.ShapeTest.testSquareArea" />
+        <item itemvalue="JUnit.CalculatorTest.testMultiplyMethod" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fb597314-9845-4579-bc9d-3deba8c99a5a" name="Changes" comment="" />
