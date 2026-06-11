@@ -7,8 +7,8 @@
 }
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -26,6 +26,23 @@ body {
     flex-direction: column;
     justify-content: end;
     padding: 14px 16px;
+
+    /* header {
+    background-color: aliceblue;
+    padding: 0 24px;
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 12px 0;
+    gap: 40px;
+}
+
+.menu a {
+    padding: 8px 0;
     text-decoration: none;
     font-size: 20px;
     color: #000;
@@ -41,19 +58,93 @@ body {
     .nav a {
         display: none;
     }
-
-    
-    .nav .drop {
-        display: block;
+    .menu .fa-bars {
+        display: none;
+        gap: 4px;
+        padding: 8px 0;
     }
 
-    .nav a:hover {background-color: #ddd;}
+    .header-contents {
+        padding: 0 60px;
+        display: grid;
+        grid-template-columns: 7fr 3fr;
+    }
 
-    .icon:hover .nav {display: block;}
-
-    header:hover .drop {background-color: #3e8e41;}
-}
-
-
+    .content h1 {
+        padding-right: 60px;
+        font-size: 44px;
+    } */
 
 
+
+    @media (max-width: 600px) {
+        header {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 2rem;
+        }
+
+        header .menu {
+            display: none;
+            flex-direction: row;
+        }
+
+        .header-inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 40px;
+        }
+
+        .header-inner .content h1 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+
+        .header-inner .content p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .content .btn {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background-color: #FF6464;
+            padding: 12px 18px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #fff;
+            width: fit-content;
+        }
+
+        .menu .fa-bars {
+            display: block;
+            flex-direction: column;
+            gap: 24px;
+            padding: 0;
+        }
+
+
+        .nav .drop {
+            display: block;
+        }
+
+        .nav a:hover {
+            background-color: #ddd;
+        }
+
+        .icon:hover .nav {
+            display: block;
+        }
+
+        header:hover .drop {
+            background-color: #3e8e41;
+        }
+    }
