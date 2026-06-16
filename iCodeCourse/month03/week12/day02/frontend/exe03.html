@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-size: 26px;
+            color: #fff4a3;
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #3c3c3c;
+            color: #fff;
+            padding: 0 30px;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            justify-content: right;
+            align-items: center;
+        }
+
+        .nav-links .active {
+            border-bottom: 2px solid #fff4a3;
+            width: fit-content;
+        }
+
+        .nav-links li {
+            position: relative;
+            list-style-type: none;
+        }
+        
+        .nav-links li::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #fff4a3;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links li:hover::after {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span class="logo">iCode</span>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Нүүр</a></li>
+            <li><a href="#">Хичээлүүд</a></li>
+            <li><a href="#">Төслүүд</a></li>
+            <li><a href="#">Тухай</a></li>
+            <li><a href="#">Холбогдох</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
