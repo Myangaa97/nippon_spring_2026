@@ -1,0 +1,18 @@
+{
+  "hosting": {
+    "site": "nippon-spring-2026-myangaa-a0502",
+
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

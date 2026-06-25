@@ -25,3 +25,4 @@ for (const sc of gradeScores) {
 
 console.log(sumGrade);
 console.log(sumGrade / gradeScores.length);
+console.log(gradeScores.indexOf(78));
