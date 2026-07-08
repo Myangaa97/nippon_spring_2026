@@ -39,12 +39,13 @@ public class BookApi {
     
     @GetMapping("api/books/{id}/title")
     public String bookTitleById(@PathVariable int id) {
+    	List<Book> filteredBookTitle = new ArrayList<>();
     	for (Book b : books) {
-			if (b.title == id) {
-				return b;
+			if (b.id()== id) {
+				filteredBookTitle.add(b);
 			}
 		}
-    	return null;
+    	return b.title();
     }
    
 

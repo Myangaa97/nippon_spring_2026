@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>Дасгал 2</title>
+</head>
+<body>
+    <input type="text" id="nameInput" placeholder="Нэрээ бичнэ үү">
+    <button id="greetBtn">Хүндэтгэх</button>
+    <p id="greeting"></p>
+
+    <script>
+        const input = document.getElementById("nameInput");
+        const button = document.getElementById("greetBtn");
+        const greeting = document.getElementById("greeting");
+
+        button.addEventListener("click", () => {
+            const name = input.value;
+            if (name) {
+                greeting.textContent = `Сайн байна уу, ${name}!`;
+            } else {
+                greeting.textContent = "Нэр оруулна уу!";
+            }
+        });</script>
+</body>
+</html>
