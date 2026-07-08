@@ -29,19 +29,19 @@ public class BookApi {
     
     @GetMapping("/api/books/{id}")
     public Book bookById(@PathVariable int id) {
-    	for (Book b : books) {
-			if (b.id == id) {
-				return b;
+    	for (Book book : books) {
+			if (book.id() == id) {
+				return book;
 			}
 		}
 		return null;
     }
     
     @GetMapping("api/books/{id}/title")
-    public String bookTitleById(@PathVariable int id) {
-    	for (Book b : books) {
-			if (b.title == id) {
-				return b;
+    public String getBookTitle(@PathVariable int id) {
+    	for (Book book : books) {
+    		if (book.id() == id) {
+				return book.title();
 			}
 		}
     	return null;
@@ -49,8 +49,8 @@ public class BookApi {
    
 
     @GetMapping("/api/books/count")
-    public String booksCount() {
-        return "3";
+    public int booksCount() {
+        return books.size();
     }
 
     @GetMapping("/api/books/search")
