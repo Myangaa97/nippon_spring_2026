@@ -73,7 +73,8 @@ greetButton.addEventListener("click", function() {
 const inputGreet = document.getElementById("hello");
 const submit = document.getElementById("submit");
 inputGreet.addEventListener("input", (e) => {
-	console.log(e.target.value);
+	if(e.target.value === "")
+		alert("Input name pls");
 });
 
 
