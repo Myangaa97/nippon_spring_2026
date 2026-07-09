@@ -38,13 +38,21 @@ public class BookApi {
     }
     
     @GetMapping("api/books/{id}/title")
+<<<<<<< HEAD
     public String getBookTitle(@PathVariable int id) {
     	for (Book book : books) {
     		if (book.id() == id) {
 				return book.title();
+=======
+    public String bookTitleById(@PathVariable int id) {
+    	List<Book> filteredBookTitle = new ArrayList<>();
+    	for (Book b : books) {
+			if (b.id()== id) {
+				filteredBookTitle.add(b);
+>>>>>>> 6e4e8e061b6715b7d794d8ecfcc589ae4a8bd6fd
 			}
 		}
-    	return null;
+    	return b.title();
     }
    
 
