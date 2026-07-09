@@ -201,24 +201,3 @@ body,
     color: #FFF;
     background-color: var(--equal-bg-color);
 }
-
-
-
-
-
-.dark-light i {
-    color: rgba(0,0,0,0.3);
-    transition: .3s;
-}
-
-.dark-light i.active {
-    color: #000;
-}
-
-body.dark .dark-light i {
-    color: rgba(255,255,255,0.3);
-}
-
-body.dark .dark-light i.active {
-    color: white;
-}

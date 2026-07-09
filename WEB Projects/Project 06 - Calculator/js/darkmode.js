@@ -2,16 +2,22 @@ const body = document.querySelector("body");
 const moon = document.querySelector(".moon");
 const sun = document.querySelector(".sun");
 
-const icon = document.querySelector(".dark-light");
+moon.addEventListener("click", () => {
+    body.classList.add("dark");
+});
+
+sun.addEventListener("click", () => {
+    body.classList.remove("dark");
+});
+
+const icon = document.querySelector(".theme-icon");
 
 icon.addEventListener("click", () => {
     body.classList.toggle("dark");
 
-    if (body.classList.contains("dark")) {
-        sun.classList.add("active");
-        moon.classList.remove("active");
+    if(body.classList.contains("dark")){
+        icon.classList.replace("bx-moon", "bx-sun");
     } else {
-        moon.classList.add("active");
-        sun.classList.remove("active");
+        icon.classList.replace("bx-sun", "bx-moon");
     }
 });
