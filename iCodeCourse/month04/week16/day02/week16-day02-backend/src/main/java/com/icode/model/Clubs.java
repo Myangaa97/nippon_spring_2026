@@ -3,6 +3,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -23,6 +25,7 @@ public class Clubs {
 	private Boolean isActive = true;
 	
 	@OneToMany(mappedBy = "clubs", cascade = CascadeType.ALL)
+	@JsonManagedReference
 	private List<Members> members = new ArrayList<>();
 	
 	@Column
@@ -66,5 +69,13 @@ public class Clubs {
 
 	public void setIsActive(Boolean isActive) {
 		this.isActive = isActive;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 }

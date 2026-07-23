@@ -1,9 +1,9 @@
 package com.icode.model;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.ZonedDateTime;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -29,6 +29,7 @@ public class Members {
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "club_id")
+	@JsonBackReference
 	private Clubs clubs;
 
 	public Long getId() {
