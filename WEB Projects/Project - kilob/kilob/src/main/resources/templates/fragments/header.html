@@ -1,0 +1,35 @@
+<header th:fragment="header" class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200 shadow-sm px-6">
+	<div class="flex justify-between items-center h-16">
+
+		<!-- Logo -->
+		<div class="">
+			<a th:href="@{/}" class="text-2xl font-bold text-cyan-500">KILOb</a>
+		</div>
+
+		<!-- Desktop Menu -->
+		<nav class="hidden md:flex gap-8">
+			<a th:href="@{/}" class="nav-link">Home</a>
+			<a th:href="@{/posts}" class="nav-link">Posts</a>
+			<a th:href="@{/about}" class="nav-link">About</a>
+			<a th:href="@{/contact}" class="nav-link">Contact</a>
+
+			<a th:if="${user == null}" th:href="@{/signin}" class="nav-link">Sign in</a>
+			<a th:if="${user == null}" th:href="@{/signup}" class="nav-link">Sign out</a>
+			<a th:if="${user != null}" th:href="@{/profile}" class="nav-link" th:text="${user.username}"></a>
+		</nav>
+
+		<!-- Hamburger -->
+		<button id="menuBtn" class="md:hidden text-3xl">
+			x
+		</button>
+	</div>
+
+	<!-- Mobile Menu -->
+	<nav id="mobileMenu" class="hidden flex-col py-4 space-y-3 md:hidden">
+		<a th:href="@{/}" class="block">Home</a>
+		<a th:href="@{/posts}" class="block">Posts</a>
+		<a th:href="@{/about}" class="block">About</a>
+		<a th:href="@{/contact}" class="block">Contact</a>
+		<a th:if="${user == null}" th:href="@{/login}" class="block">Login</a>
+	</nav>
+</header>

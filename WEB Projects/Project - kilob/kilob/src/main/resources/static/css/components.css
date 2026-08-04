@@ -1,0 +1,22 @@
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--secondary-purple), var(--primary-teal));
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}

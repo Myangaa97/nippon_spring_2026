@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: tomato;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.quote {
+    max-width: 80%;
+    font-style: italic;
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-align: center;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    color: #fff;
+}

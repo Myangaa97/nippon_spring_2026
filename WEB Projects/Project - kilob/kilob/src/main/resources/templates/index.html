@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	<meta charset="UTF-8">
-		<title>KILOb</title>
-	</head>
-	<body>
-		<h1>HELLO !</h1>
-	</body>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>KILOb</title>
+</head>
+
+<body>
+
+    <div th:replace="~{fragments/header :: header}"></div>
+
+    <main>
+        <!-- Home page content -->
+    </main>
+    <script th:src="@{/js/menu.js}"></script>
+</body>
+
 </html>

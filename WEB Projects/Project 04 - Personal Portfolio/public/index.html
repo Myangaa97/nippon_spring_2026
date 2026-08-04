@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <button class="mobile-menu">
+            <i class='bx bx-menu'></i>
+        </button>
+
+        <div class="overlay"></div>
+
+        <aside class="side-bar">
+            <div class="nav-header">
+                <a href="index.html">Portfolio</a>
+                <button class="close-btn">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+            <nav class="side-nav">
+                <a class="menu active" onclick="loadPage('home', this)">Home</a>
+                <a class="menu" onclick="loadPage('about', this)">About</a>
+                <a class="menu" onclick="loadPage('skills', this)">Skills</a>
+                <a class="menu" onclick="loadPage('projects', this)">Projects</a>
+                <a class="menu" onclick="loadPage('contact', this)">Contact</a>
+            </nav>
+            <div class="socials">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/myangaa___/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/Myangaa97" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="copyright">
+                <p>Copyright ©2026 Myangaa.</p>
+                <p>All right reserved.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div id="page"></div>
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

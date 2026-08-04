@@ -1,0 +1,20 @@
+@import url("components.css");
+@import url("responsive.css");
+
+:root {
+  --primary-teal: rgba(0, 180, 175, 1);
+  --secondary-purple: rgba(170, 120, 180, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../images/bg_base.jpg');
+    background-repeat: no-repeat;
+}
+

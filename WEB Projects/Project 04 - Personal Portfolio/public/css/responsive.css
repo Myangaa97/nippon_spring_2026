@@ -1,0 +1,162 @@
+/* SMARTPHONE - Responsive Style */
+@media (min-width: 640px) {
+    .content {
+        margin-left: 60px;
+    }
+
+    .mobile-menu {
+        width: 60px;
+    }
+
+    form {
+        flex-direction: row;
+    }
+
+    .input-groups {
+        flex-direction: row;
+    }
+
+}
+
+/* TABLET - Responsive Style */
+@media (min-width: 768px) {
+    .container {
+        min-height: 100vh;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .side-bar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 280px;
+        height: 100vh;
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .content {
+        margin-left: 280px;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    .contact-text h1,
+    .intro h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .contact-text h1 {
+        font-weight: 500;
+    }
+
+    .contact-text .address,
+    .intro-contact p,
+    .intro p {
+        font-size: 16px;
+    }
+
+    .intro-contact {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .intro-img {
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+}
+
+/* DESKTOP  - Responsive Style */
+@media (min-width: 1024px) {
+    .intro {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .contact-text h1,
+    .intro h1 {
+        font-size: 33px;
+        line-height: 43px;
+    }
+
+    .contact-text h1 {
+        font-weight: 600;
+    }
+
+    .intro-contact {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+
+    .cv-btn {
+        margin-top: 60px;
+    }
+
+    .intro-img {
+        min-width: 320px;
+        min-height: 320px;
+    }
+
+    .content {
+        margin-left: 280px;
+    }
+
+    .hero {
+        flex-direction: row;
+        min-height: 100vh;
+        padding: 60px;
+    }
+}
+
+/* LARGE DESKTOP  - Responsive Style */
+@media (min-width: 1280px) {
+    .side-bar .socials {
+        margin-left: 10px;
+        flex-direction: column;
+    }
+
+    .intro-contact {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .contact-text h1,
+    .intro h1 {
+        font-size: 63px;
+        line-height: 83px;
+    }
+
+    .intro-img {
+        min-width: 500px;
+        min-height: 500px;
+    }
+
+    .cv-btn {
+        padding: 10px 50px;
+    }
+}

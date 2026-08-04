@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --sidebar-bg-color: linear-gradient(90deg, rgba(0, 14, 41, 1) 0%, rgba(48, 0, 29, 1) 100%);
+    --button-bg-color: #130c19;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+/* Mobile - Responsive Style */
+.mobile-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 100vh;
+    border: none;
+    background: var(--sidebar-bg-color);
+    color: #fff;
+    font-size: 30px;
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 56px 48px;
+    height: 100vh;
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    background: var(--sidebar-bg-color);
+    color: #fff;
+    transition: left 0.3s;
+    z-index: 1001;
+}
+
+.side-bar.open {
+    left: 0;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header a {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.close-btn {
+    font-size: 40px;
+    color: #fff;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-nav a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.side-nav .active,
+.side-nav a:hover {
+    border-left: 2px solid #fff;
+    font-weight: 700;
+}
+
+.side-bar .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 27px;
+}
+
+.side-bar .socials .bx {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+}
+
+.side-bar .copyright {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.content {
+    flex: 1;
+    margin-left: 36px;
+}
+
+#page {
+    min-height: 100vh;
+    height: 100%;
+}
+
+#page.hide {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity .5s ease, transform .5s ease;
+}
+
+#page.show {
+    animation: pageEnter 1.5s ease forwards;
+}
+
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        transform: translateX(700px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* HOME PAGE - Style*/
+.hero {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: auto;
+}
+
+.intro {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.contact-text .address,
+.intro-contact p,
+.intro p {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.cv-btn,
+.intro-contact,
+.intro-contact p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.intro-contact p,
+.cv-btn {
+    flex-direction: row;
+}
+
+.intro-contact {
+    margin-top: 30px;
+}
+
+.intro-contact p {
+    justify-content: center;
+    font-weight: 600;
+    gap: 10px;
+}
+
+.intro-img {
+    position: relative;
+    z-index: 1;
+    min-width: 240px;
+    min-height: 240px;
+    border-radius: 50%;
+    background-image: url(../images/info.png);
+    background-size: cover, 50%;
+    background-repeat: no-repeat;
+}
+
+.cv-btn {
+    padding: 5px 10px;
+    background: rgba(48, 0, 29, 1);
+    /* background: var(--sidebar-bg-color); */
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: fit-content;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* CANTACT PAGE - Style*/
+.contact-text {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-text h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contact-text .address {
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.contact-text .intro-contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-style: normal;
+}
+
+.contact-text .intro-contact p {
+    font-weight: 600;
+}
+
+.contact-text {
+    font-size: 24px;
+}
+
+.contact-form {
+    flex: 1;
+    width: 100%;
+    padding: 32px;
+    background: var(--sidebar-bg-color);
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input-groups {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: inherit;
+}
+
+.input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    pointer-events: none;
+    transition:  .3s ease-out;
+}
+
+.input-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: inherit;
+    resize: none;
+    font-family: inherit;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+    top: -18px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.submit-btn {
+    margin-top: 30px;
+    background: #130c19;
+    border: none;
+    padding: 14px 28px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background: #fff;
+    color: #111;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Course Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Course Manager</h1>
+
+  <section>
+    <h2>Add Student</h2>
+    <input id="name" placeholder="Name">
+    <input id="email" placeholder="Email">
+    <button id="addBtn">Add</button>
+  </section>
+
+  <section>
+    <h2>Students</h2>
+    <input id="search" placeholder="Search by name...">
+    <table id="studentsTable">
+      <thead>
+        <tr><th>ID</th><th>Name</th><th>Email</th><th>Enrolled</th><th></th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Enrollments (JOIN result)</h2>
+    <table id="enrollTable">
+      <thead>
+        <tr><th>Student</th><th>Course</th><th>Grade</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
