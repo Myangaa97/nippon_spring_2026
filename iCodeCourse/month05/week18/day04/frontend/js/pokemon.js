@@ -55,8 +55,9 @@ function renderCard(pokemon) {
 
     card.innerHTML = `
         <img src="${artWork}" alt=${pokemon.name} />
-        <p>#${String(pokemon.id).padStart(3, '0')}</p>
         <h3>${pokemon.name}</h3>
+        <p>#${String(pokemon.id).padStart(3, '0')}</p>
+        
     `;
 
     POKEMON_CONTAINER.appendChild(card);

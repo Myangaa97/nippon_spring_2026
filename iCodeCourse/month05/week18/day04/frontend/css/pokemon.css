@@ -1,27 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
---color-dark-gray :#212121;
---color :#2121213D;
---color :#21212199;
---color :#21212114;
---color :#212121CC;
---color :#FFFFFF;
---color :#FFFFFF29;
---color :#FFFFFF14;
---color :#FFFFFFCC;
---color :#212121;
---color :#FFFFFF;
---color :#21212129;
---color :#416EDF;
---color :#416EDF99;
---color :#C9D2EA;
---color :#F5F7FB;
---color :#FFCE31;
+    /* Colors */
+    --color-white: #fff;
+    --color-white-80: rgba(255, 255, 255, .8);
+    --color-white-16: rgba(255, 255, 255, .16);
+    --color-white-8: rgba(255, 255, 255, .08);
+    --color-light-gray: #f5f7fb;
+    --color-dark-gray: #212121;
+    --color-dark-gray-80: rgb(33, 33, 33, .8);
+    --color-dark-gray-60: rgb(33, 33, 33, .6);
+    --color-dark-gray-24: rgb(33, 33, 33, .24);
+    --color-dark-gray-16: rgb(33, 33, 33, .16);
+    --color-dark-gray-8: rgb(33, 33, 33, .08);
+    --color-blue: #c9d2ea;
+    --color-dark-blue: #416edf;
+    --color-dark-blue-60: rgb(65, 110, 223, .6);
+    --color-yellow: #ffce31;
 
-    --color-bg: #f5f7fb;
+    /* Tag Color */
+    --color-tag-fire: #ff6464;
+    --color-tag-bug: #c9ff84;
+    --color-tag-water: #9ff3ff;
+    --color-tag-flying: linear-gradient(0deg, #cbe9ff, #2299ee);
+    --color-tag-poison: #d89cfd;
+    --color-tag-normal: #cbcbcb;
+    --color-tag-rock: #cfc06f;
+    --color-tag-ground: #ffbf72;
+    --color-tag-fighting: #ff699f;
+    --color-tag-ghost: #b592ff;
+    --color-tag-psychic: #ff5e60;
+    --color-tag-ice: #aefff4;
+    --color-tag-dragon: #87c5ff;
+    --color-tag-dark: #8f8f8f;
+    --color-tag-fairy: #ffa2e3;
+    --color-tag-electric: #fffa86;
+    --color-tag-steel: #a4ffe9;
+    --color-tag-grass: #80e177;
 
-    --base-font: "Roboto", sans-serif;
+    /* Type Color */
+    --color-type-fire: #eb6c6c;
+    --color-type-bug: #91ac22;
+    --color-type-water: #009acb;
+    --color-type-flying: linear-gradient(0deg, #cbe9ff, #2299ee);
+    --color-type-poison: #7e00cb;
+    --color-type-normal: #b6b6b6;
+    --color-type-rock: #857d57;
+    --color-type-ground: #a77437;
+    --color-type-fighting: #ba114e;
+    --color-type-ghost: #6b2bf1;
+    --color-type-psychic: #c4484a;
+    --color-type-ice: #3a9d90;
+    --color-type-dragon: #1268b8;
+    --color-type-dark: #373737;
+    --color-type-fairy: #c01a8d;
+    --color-type-electric: #b7b117;
+    --color-type-steel: #448f85;
+    --color-type-grass: #1eba11;
+
+    /* Font */
+    --font-base: "Roboto", sans-serif;
+    
+    --size-xs: 0.75rem;     /* 12px */
+    --size-sm: 0.875rem;    /* 14px */
+    --size-md: 1rem;        /* 16px */
+    --size-lg: 1.125rem;    /* 18px */
+    --size-xl: 1.75rem;     /* 28px */
+    --size-3xl: 3rem;       /* 48px */
 }
 
 * {
@@ -32,30 +77,58 @@
 
 body {
     font-family: var(--base-font);
-    background: var(--color-bg);
+    background: var(--color-light-gray);
 }
 
 .container {
     margin: 0 auto;
+    padding: 48px 64px;
     background-color: #f5f7fb;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .container h1 {
-    font-size: 3rem;
-    color: ;
+    font-size: 48px;
+    color: var(--color-dark-blue);
+}
+
+#pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
 }
 
 .card {
-    width: 300px;
-    height: 300px;
-    border: 1px solid black;
+    width: 322px;
+    height: 260px;
     border-radius: 20px;
     position: relative;
+    box-shadow: 0px 11px 20px 0px rgba(145, 145, 145, 0.16);
+    margin-top: 80px;
+    padding: 24px;
+    padding-top: 80px;
+    background: tomato;
 }
 
 .card img {
-    width: 80%;
+    width: 180px;
     position: absolute;
-    top: -50%;
-    left: 10%;
+    top: -86px;
+    left: 70px;
+}
+
+.card h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-white);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-white-80);
 }
