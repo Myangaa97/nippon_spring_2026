@@ -22,6 +22,14 @@ public class Students {
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
 	@JoinColumn(name = "department_id", nullable = false, foreignKey = @ForeignKey(name = "fk_students_department"))
 	private Departments departments;
+	
+	public Departments getDepartments() {
+	    return departments;
+	}
+
+	public void setDepartments(Departments departments) {
+	    this.departments = departments;
+	}
 
 	protected Students() {
 	}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pokemon</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="modal"></div>
+        <header class="header">
+            <div class="logo"><img src="./images/logo.svg" alt=""></div>
+            <div class="search-box">
+                <div class="search-icon"><i class='bx bx-search'></i></div>
+                <div class="search-input">
+                    <input type="text" placeholder="Pokemon name, number or type">
+                </div>
+                <div class="btn second-btn">Search</div>
+            </div>
+        </header>
+        <main id="main">
+            <div class="filter-buttons">
+                <div class="order"></div>
+                <div class="filter"></div>
+            </div>
+            <div class="pokemon" id="pokemon-list"></div>
+            <div id="myModal" class="modal">
+
+            </div>
+            <div id="loader">
+                Loading...
+            </div>
+        </main>
+    </div>
+
+
+    </main>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

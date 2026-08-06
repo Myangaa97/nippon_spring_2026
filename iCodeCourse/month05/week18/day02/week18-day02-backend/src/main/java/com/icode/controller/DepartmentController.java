@@ -13,14 +13,14 @@ import com.icode.service.DepartmentsService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("api/departments")
+@RequestMapping("/api/departments")
 public class DepartmentController {
-	private final DepartmentsRequest departmentsRequest;
+//	private final DepartmentsRequest departmentsRequest;
 	private final DepartmentsService departmentsService;
 
 	public DepartmentController(DepartmentsService departmentsService, DepartmentsRequest departmentsRequest) {
 		this.departmentsService = departmentsService;
-		this.departmentsRequest = departmentsRequest;
+//		this.departmentsRequest = departmentsRequest;
 	}
 
 	@GetMapping
@@ -29,7 +29,8 @@ public class DepartmentController {
 	}
 
 	@PostMapping
-	public ResponseEntity<DepartmentsResponse> create(@Valid @RequestBody DepartmentsRequest request) {
+	public ResponseEntity<DepartmentsResponse> 
+		create(@Valid @RequestBody DepartmentsRequest request) {
 		DepartmentsResponse creaDepartments = departmentsService.create(request);
 
 		return ResponseEntity.status(HttpStatus.CREATED).body(creaDepartments);
@@ -49,5 +50,9 @@ public class DepartmentController {
 	}
 	
 	// find by id
+	@GetMapping("/{id}")
+	public DepartmentsResponse findById(@PathVariable Long id) {
+		return departmentsService.findById(id);
+	}
 
 }

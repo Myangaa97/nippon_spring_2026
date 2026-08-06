@@ -1,6 +1,6 @@
 package com.icode.dto;
 
-public record StudentsRespose(
+public record StudentsResponse(
 		long id,
 		String firstname,
 		String lastName,
