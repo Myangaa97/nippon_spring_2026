@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+--color-dark-gray :#212121;
+--color :#2121213D;
+--color :#21212199;
+--color :#21212114;
+--color :#212121CC;
+--color :#FFFFFF;
+--color :#FFFFFF29;
+--color :#FFFFFF14;
+--color :#FFFFFFCC;
+--color :#212121;
+--color :#FFFFFF;
+--color :#21212129;
+--color :#416EDF;
+--color :#416EDF99;
+--color :#C9D2EA;
+--color :#F5F7FB;
+--color :#FFCE31;
+
+    --color-bg: #f5f7fb;
+
+    --base-font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--base-font);
+    background: var(--color-bg);
+}
+
+.container {
+    margin: 0 auto;
+    background-color: #f5f7fb;
+}
+
+.container h1 {
+    font-size: 3rem;
+    color: ;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+}
+
+.card img {
+    width: 80%;
+    position: absolute;
+    top: -50%;
+    left: 10%;
+}

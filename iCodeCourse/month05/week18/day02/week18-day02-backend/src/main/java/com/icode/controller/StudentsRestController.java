@@ -1,5 +1,6 @@
 package com.icode.controller;
 
+<<<<<<< Updated upstream
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
@@ -63,3 +64,25 @@ public class StudentsRestController {
         return ResponseEntity.noContent().build();
     }
 }
+=======
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.icode.dto.StudentsRequest;
+
+@RestController
+@RequestMapping
+public class StudentsRestController {
+	private final StudentsRequest studentsRequest;
+	private final StudentService
+	//find all
+	
+	// find by id
+	
+	// create students
+	
+	// update student by id
+	
+	// delete student by id
+}
+>>>>>>> Stashed changes
