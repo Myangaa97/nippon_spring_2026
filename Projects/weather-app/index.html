@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="">
+                Weather App
+            </div>
+            <input type="text" placeholder="Search for cities">
+            <div class="toggle">
+                <p class="active">°F</p>
+                <p>°C</p>
+            </div>
+        </div>
+        <main class="weather-main">
+            <div class="weather-content">
+                <div class="weather">
+                    <div class="city">
+                        <p>2nd Feb, Friday</p>
+                        <h4>Madrid</h4>
+                        <h3>16°/-1°</h3>
+                    </div>
+                    <img src="./images/partly cloudy.svg" alt="">
+                </div>
+                <div class="weather-today">
+                    <p>Today’s forecast</p>
+                    <div class="today-card">
+                        <p>6:00 AM</p>
+                        <img src="./images/partly cloudy.svg" alt="">
+                        <h4>10°</h4>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <p>Weather Details</p>
+                    <div class="detail-card">
+                        <div class="detail">
+                            <p>Sunrise</p>
+                            <h4>8:18 am</h4>
+                        </div>
+                        <img src="./images/sunrise.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="weather-week">
+                    <div class="week-head">7 DAYS FORECAST</div>
+                    <div class="week-day">
+                        <p>3rd Febuary</p>
+                        <p>Saturday</p>
+                        <img src="./images/partly cloudy.svg" alt="">
+                        <p>Partly Cloudy</p>
+                        <p>10°/1°</p>
+                    </div>
+                    <div class="week-day">
+                        <p>3rd Febuary</p>
+                        <p>Saturday</p>
+                        <img src="./images/partly cloudy.svg" alt="">
+                        <p>Partly Cloudy</p>
+                        <p>10°/1°</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
