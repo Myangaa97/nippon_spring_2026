@@ -1,29 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="./css/pokemon.css">
     <title>My Pokédex</title>
 </head>
+
 <body>
     <main class="container">
-        <h1>Pokédex</h1>
+        <div class="logo"><img src="./images/logo.svg" alt=""></div>
 
         <!-- Search & Filter -->
-        <div class="controls">
-            <input type="text" id="search-input" placeholder="Покемоны нэрээр хайх..." autocomplete="off" />
-            <select id="type-select">
-                <option value="all">Бүх төрөл</option>
-            </select>
+        <div class="search-box">
+            <div class="search-icon"><i class='bx bx-search'></i></div>
+            <div class="search-input">
+                <input type="text" placeholder="Pokemon name, number or type" autocomplete="off" />
+            </div>
+            <div class="btn second-btn">Search</div>
+        </div>
+        <div class="filter">
+            <div class="sort-dropdown">
+                <button class="sort-btn">
+                    <span id="selected-sort">Lowest Number First</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+
+                <ul class="sort-menu">
+                    <li data-value="number-asc">Lowest Number First</li>
+                    <li data-value="number-desc">Highest Number First</li>
+                    <li data-value="name-asc">Alphabetically (A-Z)</li>
+                    <li data-value="name-desc">Alphabetically (Z-A)</li>
+                </ul>
+            </div>
+            <!-- <div id="filter-modal" class="filter-modal">
+                <div class="filter-box">
+                    <h3>Filters</h3>
+                    <button class="close-btn"><i class='bx bx-x'></i></button>
+                    <div class="types-filter">
+                        <h3>Type</h3>
+                        <label for="">
+                            <input type="checkbox" value="fire">
+                            Fire
+                        </label>
+                        <label for="">
+                            <input type="checkbox" value="water">
+                            Water
+                        </label>
+                    </div>
+                </div>
+            </div> -->
         </div>
 
         <!-- Pokemon Card -->
-        <div id="pokemon-grid" class="grid"></div>
+        <div id="pokemon-grid" class="grid">
+            <div class="modal" id="pokemon-modal">
+
+                <div class="modal-content">
+
+                    <button class="close-btn">&times;</button>
+
+                    <div id="modal-body"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+
 
         <!-- Infiniti Scroll -->
         <div id="loading-trigger" class="loading">
-            <p>Ачаалж байна...</p>
+            <img src="./images/loader.svg" alt="">
         </div>
     </main>
 
@@ -33,13 +84,8 @@
         <div id="modal-content" class="modal-body"></div>
     </dialog>
 
-
-    <h1>Pokemon API TEST</h1>
-    <div class="pokemon-container">
-
-    </div>
-
     <script src="./js/app.js"></script>
     <script src="./js/pokemon.js"></script>
 </body>
+
 </html>

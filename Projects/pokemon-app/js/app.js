@@ -21,9 +21,7 @@ function showSkeleton(count = 20) {
 
         card.innerHTML = `
             <div class="skeleton skeleton-img"></div>
-
             <div class="skeleton skeleton-name"></div>
-
             <div class="skeleton skeleton-num"></div>
 
             <div class="pok-tags">
@@ -31,7 +29,6 @@ function showSkeleton(count = 20) {
                 <div class="skeleton skeleton-tag"></div>
             </div>
         `;
-
 
         pokemonList.appendChild(card);
 
@@ -46,13 +43,11 @@ function showSkeleton(count = 20) {
 // Pokemon load
 async function loadPokemon() {
 
-    // Давхар fetch-ээс хамгаална
     if (loading) return;
 
     loading = true;
 
 
-    // Skeleton харуулах
     const skeletons = showSkeleton(limit);
 
 
@@ -66,10 +61,10 @@ async function loadPokemon() {
         const data = await response.json();
 
 
-        // Detail мэдээлэл зэрэг авах
+
         const pokemonData = await Promise.all(
 
-            data.results.map(async (pokemon) => {
+            data.results.map(async pokemon => {
 
                 const response = await fetch(pokemon.url);
 
@@ -80,19 +75,21 @@ async function loadPokemon() {
         );
 
 
-        // Skeleton устгах
-        skeletons.forEach(item => {
-            item.remove();
-        });
+
+        // remove skeleton
+
+        skeletons.forEach(item => item.remove());
 
 
 
-        // Card үүсгэх
+        // create cards
+
         pokemonData.forEach(data => {
 
             createCard(data);
 
         });
+
 
 
         offset += limit;
@@ -111,65 +108,95 @@ async function loadPokemon() {
 
 
 
-// Card create
+
+// Create pokemon card
+
 function createCard(data) {
 
 
     const card = document.createElement("div");
 
-    card.className = "pokemon-card";
+
+    // Card background type авах
+    const mainType = data.types[0].type.name;
+
+
+    card.className = `pokemon-card ${mainType}`;
+
 
 
     card.innerHTML = `
+
 
         <div class="pok-img">
 
             <img 
                 loading="lazy"
-                src="${data.sprites.other["official-artwork"].front_default}" 
+                src="${data.sprites.other["official-artwork"].front_default}"
                 alt="${data.name}"
             >
 
         </div>
 
 
+
         <p class="pok-name">
 
-            ${data.name.charAt(0).toUpperCase() + data.name.slice(1)}
+            ${capitalize(data.name)}
 
         </p>
+
 
 
         <p class="pok-num">
 
-            #${String(data.id).padStart(3, "0")}
+            #${String(data.id).padStart(3,"0")}
 
         </p>
 
 
+
         <div class="pok-tags">
 
-            ${data.types.map(type => `
 
-                <div class="pok-tag ${type.type.name}">
+            ${data.types.map(type => {
+
+
+                const typeName = type.type.name;
+
+
+                return `
+
+                <div class="pok-tag ${typeName}">
+
 
                     <img 
-                        src="./images/tags/${type.type.name}.svg"
-                        alt="${type.type.name}"
+                        src="./images/tags/${typeName}.svg"
+                        alt="${typeName}"
                     >
 
+
                     <p class="tag-name">
-                        ${type.type.name.charAt(0).toUpperCase() + type.type.name.slice(1)}
+
+                        ${capitalize(typeName)}
+
                     </p>
+
 
                 </div>
 
+                `;
 
-            `).join("")}
+
+            }).join("")}
+
+
 
         </div>
 
+
     `;
+
 
 
     pokemonList.appendChild(card);
@@ -178,13 +205,29 @@ function createCard(data) {
 
 
 
+
+// First letter uppercase
+
+function capitalize(text) {
+
+    return text.charAt(0).toUpperCase() + text.slice(1);
+
+}
+
+
+
+
 // First load
+
 loadPokemon();
 
 
 
-// Infinite scroll observer
-const observer = new IntersectionObserver((entries)=>{
+
+
+// Infinite scroll
+
+const observer = new IntersectionObserver(entries => {
 
 
     if(entries[0].isIntersecting){
@@ -195,6 +238,7 @@ const observer = new IntersectionObserver((entries)=>{
 
 
 });
+
 
 
 observer.observe(loader);

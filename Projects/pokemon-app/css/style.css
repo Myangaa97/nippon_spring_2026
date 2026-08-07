@@ -38,25 +38,25 @@
     --color-tag-steel: #a4ffe9;
     --color-tag-grass: #80e177;
 
-    /* Type Color */
-    --color-type-fire: #eb6c6c;
-    --color-type-bug: #91ac22;
-    --color-type-water: #009acb;
-    --color-type-flying: linear-gradient(0deg, #cbe9ff, #2299ee);
-    --color-type-poison: #7e00cb;
-    --color-type-normal: #b6b6b6;
-    --color-type-rock: #857d57;
-    --color-type-ground: #a77437;
-    --color-type-fighting: #ba114e;
-    --color-type-ghost: #6b2bf1;
-    --color-type-psychic: #c4484a;
-    --color-type-ice: #3a9d90;
-    --color-type-dragon: #1268b8;
-    --color-type-dark: #373737;
-    --color-type-fairy: #c01a8d;
-    --color-type-electric: #b7b117;
-    --color-type-steel: #448f85;
-    --color-type-grass: #1eba11;
+    /* Card Background Color */
+    --color-bg-fire: #eb6c6c;
+    --color-bg-bug: #91ac22;
+    --color-bg-water: #009acb;
+    --color-bg-flying: linear-gradient(0deg, #cbe9ff, #2299ee);
+    --color-bg-poison: #7e00cb;
+    --color-bg-normal: #b6b6b6;
+    --color-bg-rock: #857d57;
+    --color-bg-ground: #a77437;
+    --color-bg-fighting: #ba114e;
+    --color-bg-ghost: #6b2bf1;
+    --color-bg-psychic: #c4484a;
+    --color-bg-ice: #3a9d90;
+    --color-bg-dragon: #1268b8;
+    --color-bg-dark: #373737;
+    --color-bg-fairy: #c01a8d;
+    --color-bg-electric: #b7b117;
+    --color-bg-steel: #448f85;
+    --color-bg-grass: #1eba11;
 
     /* Font */
     --font-base: "Roboto", sans-serif;
