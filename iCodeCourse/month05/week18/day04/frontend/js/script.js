@@ -65,7 +65,7 @@ async function useAsyncAwait(city) {
 
         document.getElementById('city-name').textContent = geoData[0].name;
         document.getElementById('temp').innerHTML = Math.round(weatherData.main.temp) + '&#8451';
-        document.getElementById('description').textContent = weatherData.weather[0].description;
+        document.getElementById('description').textContent = weatherData.weather[0].main;
         spinner.style.display = 'none';
         weatherInfo.style.display = 'block';
 
