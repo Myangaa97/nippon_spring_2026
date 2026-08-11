@@ -1,0 +1,51 @@
+async function openPokemonModal(id) {
+    // 1. Өмнөх покемоны төрлийн классуудыг бүрэн устгаж цэвэрлэх
+    modalContent.className = "modal-body"; 
+    modalContent.innerHTML = "<p>Ачаалж байна...</p>";
+    modal.showModal();
+
+    try {
+        const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+        const pokemon = await res.json();
+        console.log('modal pokemon: ', pokemon);
+
+        const artWork = pokemon.sprites.other['official-artwork'].front_default || pokemon.sprites.front_default;
+        
+        // Покемоны үндсэн төрлийг класс болгон нэмэх (Жишээ нь: fire, water)
+        const primaryType = pokemon.types[0].type.name;
+        modalContent.classList.add(primaryType);
+
+        // Төрлүүдийг badge хэлбэрээр үүсгэх HTML
+        const typesHTML = pokemon.types.map(t => 
+            `<span class="type-badge ${t.type.name}">${t.type.name}</span>`
+        ).join('');
+
+        // Модалын доторх HTML бүтцийг шинэчлэх
+        modalContent.innerHTML = `
+            <img src="${artWork}" alt="${pokemon.name}" />
+            <h2>${pokemon.name}</h2>
+            
+            <div class="modal-types">
+                ${typesHTML}
+            </div>
+
+            <div class="modal-stats">
+                <div class="stat-row">
+                    <span>Дугаар:</span>
+                    <strong>#${String(pokemon.id).padStart(3, '0')}</strong>
+                </div>
+                <div class="stat-row">
+                    <span>Өндөр:</span>
+                    <strong>${pokemon.height / 10} м</strong>
+                </div>
+                <div class="stat-row">
+                    <span>Жин:</span>
+                    <strong>${pokemon.weight / 10} кг</strong>
+                </div>
+            </div>
+        `;
+    } catch (error) {
+        console.error(error);
+        modalContent.innerHTML = "<p>Алдаа гарлаа...</p>";
+    }
+}
