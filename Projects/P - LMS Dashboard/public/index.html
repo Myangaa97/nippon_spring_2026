@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>LMS Dashboard Concept</title>
+</head>
+
+<body>
+    <div class="dashboard">
+        <div id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <aside id="sidebar" class="sidebar">
+            <div class="logo">
+                <a href="index.html"><img src="./images/main-logo.svg" alt=""></a>
+                <a href="index.html">
+                    <h2>Learninja<span></span></h2>
+                </a>
+                <i class='bx bx-x'></i>
+            </div>
+
+            <nav id="nav-menu" class="nav-menu">
+                <p class="active"><i class='bx bxs-dashboard'></i>Overview</p>
+                <a href="#"">
+                    <i class='bx bx-notepad' ></i>Assignment
+                </a>
+                <a href=" #">
+                    <i class='bx bx-pie-chart-alt'></i>Reports
+                    <span class="badge">12</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class='bx bx-file'></i>File Storage
+                </a>
+                <a href="#" class="nav-item justify">
+                    <i class='bx bxs-inbox'></i>Inbox
+                    <span class="badge">7</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class='bx bx-cog'></i>Settings
+                </a>
+            </nav>
+        </aside>
+
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="welcome-text">
+                    <h1>Hello Maietry</h1>
+                    <p>Let’s learn something new today!</p>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search from courses...">
+                    <i class='bx bx-search'></i>
+                </div>
+                <div class="noti-btn">
+                    <i class='bx bx-bell'></i>
+                    <span class="noti"></span>
+                </div>
+            </header>
+
+            <section class="courses-grid">
+                <div class="card card-purple">
+                    <div class="card-icon">
+                        <img src="./images/course_icon_1.svg" alt="">
+                    </div>
+                    <h3>Basic: HTML and CSS</h3>
+                    <div class="card-stats">
+                        <p><i class='bx bx-book-open'></i> 24</p><span></span>
+                        <p><i class='bx bx-file'></i> 8</p><span></span>
+                        <p><i class='bx bx-group'></i> 99</p>
+                    </div>
+                </div>
+                <div class="card card-orange">
+                    <div class="card-icon">
+                        <img src="./images/course_icon_2.svg" alt="">
+                    </div>
+                    <h3>Branding Design</h3>
+                    <div class="card-stats">
+                        <p><i class='bx bx-book-open'></i> 24</p><span></span>
+                        <p><i class='bx bx-file'></i> 8</p><span></span>
+                        <p><i class='bx bx-group'></i> 99</p>
+                    </div>
+                </div>
+                <div class="card card-green">
+                    <div class="card-icon">
+                        <img src="./images/course_icon_3.svg" alt="">
+                    </div>
+                    <h3>Motion Design</h3>
+                    <div class="card-stats">
+                        <p><i class='bx bx-book-open'></i> 24</p><span></span>
+                        <p><i class='bx bx-file'></i> 8</p><span></span>
+                        <p><i class='bx bx-group'></i> 99</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hours-spent">
+                <h3>Hours Spent</h3>
+                <div class="hours-container">
+                    <div class="chart-legend">
+                        <div class="legend">
+                            <p class="study"></p>
+                            Study
+                        </div>
+
+                        <div class="legend">
+                            <p class="exam"></p>
+                            Exam
+                        </div>
+                    </div>
+                    <canvas id="scoreChart"></canvas>
+                </div>
+            </section>
+
+            <section class="leaderboard-section">
+                <h3>Leader Board</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="rank">RANK</th>
+                                <th class="name">NAME</th>
+                                <th>COURSE</th>
+                                <th>HOUR</th>
+                                <th>POINT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="rank">
+                                    <div class="rank-content">
+                                        <p>1</p><i class='bx bx-caret-up'></i>
+                                    </div>
+                                </td>
+                                <td class="name">
+                                    <div class="user">
+                                        <div class="user-img">
+                                            <img src="./images/tb1.jpg" alt="">
+                                        </div>
+                                        <strong>Charlie Rawal</strong>
+                                    </div>
+                                </td>
+                                <td>53</td>
+                                <td>250</td>
+                                <td class="point">13.450</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">
+                                    <div class="rank-content">
+                                        <p>2</p><i class='bx bx-caret-down'></i>
+                                    </div>
+                                </td>
+                                <td class="name">
+                                    <div class="user">
+                                        <div class="user-img">
+                                            <img src="./images/tb2.jpg" alt="">
+                                        </div>
+                                        <strong>Ariana Agarwal</strong>
+                                    </div>
+                                </td>
+                                <td>88</td>
+                                <td>212</td>
+                                <td class="point">10.333</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar-right">
+            <div class="profile">
+                <div class="profile-header">
+                    <h3>Profile</h3>
+                    <p><i class='bx bx-edit'></i></p>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-border">
+                        <div class="profile-img"></div>
+                        <img src="./images/definer.svg" alt="">
+                    </div>
+                    <h4>Maietry Prajapati<img src="./images/Vector.svg" alt=""></h4>
+                    <p>College Student</p>
+                </div>
+            </div>
+
+            <div class="calendar-wrapper">
+                <div class="calendar">
+                    <div class="title">
+                        <button id="prevMonth">
+                            <i class='bx bx-chevron-left'></i>
+                        </button>
+
+                        <p id="monthTitle"></p>
+
+                        <button id="nextMonth">
+                            <i class='bx bx-chevron-right'></i>
+                        </button>
+                    </div>
+
+                    <div class="weekdays" id="weekdays"></div>
+                </div>
+            </div>
+
+            <div class="todo">
+                <h3>To Do List</h3>
+                <div class="checkbox-tree">
+
+                    <div class="todo-item-group">
+                        <label class="parent-label">
+                            <input type="checkbox" class="parent-box">
+                            <span class="task-info">
+                                <p>Developing Restaurant Apps</p>
+                                <small>Programming <span>08:00 AM</span></small>
+                            </span>
+                        </label>
+                        <div class="sub-checkboxes">
+                            <label class="child-label">
+                                <input type="checkbox" class="child-box">
+                                <p>Integrate API</p>
+                            </label>
+                            <label class="child-label">
+                                <input type="checkbox" class="child-box">
+                                <p>Slicing Home Screen</p>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="todo-item-group">
+                        <label class="parent-label">
+                            <input type="checkbox" class="parent-box">
+                            <span class="task-info">
+                                <p>Research Objective Userb</p>
+                                <small>Product Design <span>02:40 PM</span></small>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="todo-item-group">
+                        <label class="parent-label">
+                            <input type="checkbox" class="parent-box">
+                            <span class="task-info">
+                                <p>Report Analysis P2P Business</p>
+                                <small>Business <span>04:50 PM</span></small>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="./js/chart.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
