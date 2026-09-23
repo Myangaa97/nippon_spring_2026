@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - kilob</title>
+</head>
+<body>
+    <h2>Login</h2>
+
+    <p th:if="${param.error}" style="color:red;">Username эсвэл password буруу байна</p>
+    <p th:if="${param.registered}" style="color:green;">Амжилттай бүртгэгдлээ, нэвтэрнэ үү</p>
+
+    <form th:action="@{/login}" method="post">
+        <input type="text" name="username" placeholder="Username" required/>
+        <input type="password" name="password" placeholder="Password" required/>
+        <button type="submit">Login</button>
+    </form>
+
+    <a th:href="@{/register}">Бүртгүүлэх</a>
+</body>
+</html>

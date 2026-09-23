@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Form</title>
+</head>
+<body>
+    <h2 th:text="${postId} != null ? 'Пост засах' : 'Шинэ пост'"></h2>
+
+    <form th:action="${postId} != null ? @{/posts/{id}/edit(id=${postId})} : @{/posts/new}"
+          th:object="${postForm}" method="post">
+
+        <input type="text" th:field="*{title}" placeholder="Гарчиг" required/>
+        <textarea th:field="*{content}" placeholder="Агуулга" required></textarea>
+
+        <select th:field="*{categoryId}">
+            <option value="">Ангилалгүй</option>
+            <option th:each="cat : ${categories}" th:value="${cat.id}" th:text="${cat.name}"></option>
+        </select>
+
+        <button type="submit">Хадгалах</button>
+    </form>
+</body>
+</html>

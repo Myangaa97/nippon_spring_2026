@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile - kilob</title>
+</head>
+<body>
+    <h2>Миний профайл</h2>
+
+    <div>
+        <p><strong>Username:</strong> <span th:text="${user.username}"></span></p>
+        <p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
+        <p><strong>Role:</strong> <span th:text="${user.role}"></span></p>
+        <p><strong>Бүртгүүлсэн:</strong> <span th:text="${#temporals.format(user.createdAt, 'yyyy-MM-dd')}"></span></p>
+    </div>
+
+    <div sec:authorize="hasAnyRole('ADMIN','SUPER_ADMIN')">
+	    <h3>Миний бичсэн постууд</h3>
+	
+	    <div th:if="${posts.totalElements == 0}">
+	        <p>Та одоогоор пост бичээгүй байна.</p>
+	    </div>
+	
+	    <div th:each="post : ${posts.content}">
+	        <h4><a th:href="@{/posts/{id}(id=${post.id})}" th:text="${post.title}"></a></h4>
+	        <p th:text="${post.category != null ? post.category.name : 'Ангилалгүй'}"></p>
+	        <p th:text="${#temporals.format(post.createdAt, 'yyyy-MM-dd HH:mm')}"></p>
+	    </div>
+	
+	    <div th:if="${posts.totalPages > 1}">
+	        <a th:each="i : ${#numbers.sequence(0, posts.totalPages - 1)}"
+	           th:href="@{/profile(page=${i})}"
+	           th:text="${i + 1}"></a>
+	    </div>
+	</div>
+	
+	<h3>Миний бичсэн сэтгэгдлүүд</h3>
+
+	<div th:if="${comments.empty}">
+	    <p>Та одоогоор сэтгэгдэл бичээгүй байна.</p>
+	</div>
+	
+	<div th:each="comment : ${comments}">
+	    <p th:text="${comment.post.title}"></p>
+	    <p th:text="${comment.content}"></p>
+	    <p th:text="${#temporals.format(comment.createdAt, 'yyyy-MM-dd HH:mm')}"></p>
+	    <a th:href="@{/posts/{id}(id=${comment.post.id})}">Постыг харах</a>
+	    <hr/>
+	</div>
+</body>
+</html>

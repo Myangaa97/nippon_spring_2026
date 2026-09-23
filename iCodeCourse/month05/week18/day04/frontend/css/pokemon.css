@@ -1,0 +1,149 @@
+
+.filter-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    z-index: 100;
+}
+
+.filter-box {
+    width: 336px;
+    height: 100vh;
+    background: var(--color-light-gray);
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    color: var(--color-dark-gray);
+    border-bottom: 1px solid rgba(33, 33, 33, 0.24)
+}
+
+.filter-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.filter-header,
+.filter-body,
+.filter-footer {
+    padding: 25px 20px;
+}
+
+.filter-body {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.filter-body h4 {
+    margin-right: auto;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-dark-gray-60);
+}
+
+.filter-types {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filter-types label {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.filter-types label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.filter-height,
+.filter-weight,
+.filter-small,
+.filter-medium,
+.filter-large {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.filter-height {
+    margin-bottom: 20px;
+}
+
+.filter-small,
+.filter-medium,
+.filter-large {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: var(--color-dark-gray-16);
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+}
+
+.filter-small:hover,
+.filter-medium:hover,
+.filter-large:hover,
+.filter-footer .btn:hover {
+    border: 2px solid var(--color-dark-gray);
+}
+
+.filter-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-footer .btn {
+    width: 141px;
+    padding-inline: 0;
+}
+
+
+.type-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.type-item input {
+    display: none;
+}
+
+.checkmark {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--color-dark-gray);
+    border-radius: 3px;
+    position: relative;
+}
+
+.type-item input:checked + .checkmark {
+    background: var(--color-blue);
+    border: none;
+}
+
+.type-item input:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid var(--color-dark-gray);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}

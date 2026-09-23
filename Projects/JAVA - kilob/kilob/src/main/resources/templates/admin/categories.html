@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Categories</title>
+</head>
+<body>
+    <h2>Ангилал удирдах</h2>
+
+    <form th:action="@{/admin/categories/new}" method="post">
+        <input type="text" name="name" placeholder="Шинэ ангилал"/>
+        <button type="submit">Нэмэх</button>
+    </form>
+
+    <table border="1">
+        <tr><th>Нэр</th><th></th></tr>
+        <tr th:each="cat : ${categories}">
+            <td th:text="${cat.name}"></td>
+            <td>
+                <a th:href="@{/admin/categories/{id}/edit(id=${cat.id})}">Засах</a>
+                <form th:action="@{/admin/categories/{id}/delete(id=${cat.id})}" method="post" style="display:inline;">
+                    <button type="submit">Устгах</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

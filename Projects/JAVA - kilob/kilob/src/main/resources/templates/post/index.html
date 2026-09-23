@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>kilob - Posts</title>
+</head>
+<body>
+    <h1 th:if="${category == null}">kilob Blog</h1>
+	<h1 th:if="${category != null}" th:text="'Ангилал: ' + ${category.name}"></h1>
+
+    <form th:action="@{/posts}" method="get">
+        <input type="text" name="keyword" th:value="${keyword}" placeholder="Хайх..."/>
+        <select name="categoryId">
+            <option value="">Бүх ангилал</option>
+            <option th:each="cat : ${categories}"
+                    th:value="${cat.id}"
+                    th:text="${cat.name}"
+                    th:selected="${cat.id == categoryId}"></option>
+        </select>
+        <button type="submit">Хайх</button>
+    </form>
+
+    <div sec:authorize="hasAnyRole('ADMIN','SUPER_ADMIN')">
+	    <a th:href="@{/admin/posts/new}">+ Шинэ пост</a>
+	</div>
+
+    <div th:each="post : ${posts.content}">
+	    <h3><a th:href="@{/posts/{id}(id=${post.id})}" th:text="${post.title}"></a></h3>
+	    <p th:text="${post.user.username}"></p>
+	    <p>❤️ <span th:text="${post.likeCount}"></span></p>
+	</div>
+
+    <!-- Pagination -->
+    <div th:if="${posts.totalPages > 1}">
+	    <a th:each="i : ${#numbers.sequence(0, posts.totalPages - 1)}"
+	       th:href="${category != null} ? @{/category/{id}(id=${category.id}, page=${i})} : @{/posts(page=${i}, keyword=${keyword}, categoryId=${categoryId})}"
+	       th:text="${i + 1}"></a>
+	</div>
+</body>
+</html>

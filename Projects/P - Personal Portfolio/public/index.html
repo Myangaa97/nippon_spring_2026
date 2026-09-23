@@ -4,51 +4,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <title>Personal Portfolio</title>
+    <title>Myangaa T. — Junior Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <button class="mobile-menu">
-            <i class='bx bx-menu'></i>
-        </button>
 
-        <div class="overlay"></div>
+    <div class="background-shape shape-1"></div>
+    <div class="background-shape shape-2"></div>
+    <div class="background-shape shape-3"></div>
 
-        <aside class="side-bar">
-            <div class="nav-header">
-                <a href="index.html">Portfolio</a>
-                <button class="close-btn">
-                    <i class='bx bx-x'></i>
-                </button>
+    <header class="header glass">
+        <a href="#home" class="logo">PORTFOLIO</a>
+
+        <nav class="nav">
+            <a class="nav-link active" href="#home" data-i18n="nav-home">Home</a>
+            <a class="nav-link" href="#about" data-i18n="nav-about">About</a>
+            <a class="nav-link" href="#skills" data-i18n="nav-skills">Skills</a>
+            <a class="nav-link" href="#projects" data-i18n="nav-projects">Projects</a>
+            <a class="nav-link" href="#contact" data-i18n="nav-contact">Contact</a>
+        </nav>
+
+        <button class="lang-btn" id="lang-toggle" aria-label="Switch language">日本語</button>
+        <button class="menu-btn" aria-label="Open menu">☰</button>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="section hero">
+            <div class="hero-content">
+                <p class="eyebrow" data-i18n="hero-eyebrow">Hello, I'm</p>
+                <h1>Myangaa .<br><span data-i18n="role">Junior Software Developer</span></h1>
+                <p class="lead" data-i18n="hero-lead">
+                    I build modern and responsive web applications with a focus on
+                    performance, clean architecture and great user experience.
+                </p>
+
+                <div class="actions">
+                    <a href="#projects" class="btn btn-primary" data-i18n="view-work">View My Work ↗</a>
+                    <a href="#" class="btn btn-secondary" data-i18n="download-cv">Download CV ↓</a>
+                </div>
+
+                <div class="socials">
+                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#contact" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
-            <nav class="side-nav">
-                <a class="menu active" onclick="loadPage('home', this)">Home</a>
-                <a class="menu" onclick="loadPage('about', this)">About</a>
-                <a class="menu" onclick="loadPage('skills', this)">Skills</a>
-                <a class="menu" onclick="loadPage('projects', this)">Projects</a>
-                <a class="menu" onclick="loadPage('contact', this)">Contact</a>
-            </nav>
-            <div class="socials">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/myangaa___/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                <a href="https://github.com/Myangaa97" target="_blank"><i class='bx bxl-github'></i></a>
-            </div>
-            <div class="copyright">
-                <p>Copyright ©2026 Myangaa.</p>
-                <p>All right reserved.</p>
-            </div>
-        </aside>
 
-        <main class="content">
-            <div id="page"></div>
-        </main>
-    </div>
+            <div class="hero-photo glass">
+                <div class="photo-placeholder">
+                    <div class="avatar">AV</div>
+                    <p data-i18n="your-photo">Your Photo</p>
+                    <small data-i18n="photo-hint">Replace this area with your image</small>
+                </div>
+                <div class="availability"><i></i><span data-i18n="available">Available for freelance</span></div>
+            </div>
 
-    <script src="./js/script.js"></script>
+            <div class="stats glass">
+                <div><strong>1</strong><span data-i18n="stat-years">Years Experience</span></div>
+                <div><strong>9</strong><span data-i18n="stat-projects">Projects Completed</span></div>
+                <div><strong>10+</strong><span data-i18n="stat-tech">Technologies</span></div>
+                <div><strong>100%</strong><span data-i18n="stat-satisfaction">Client Satisfaction</span></div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="about-eyebrow">Get To Know Me</p>
+                <h2 data-i18n="about-title">About Me</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-copy glass">
+                    <p data-i18n="about-copy">
+                        I'm a <strong>Junior Software Developer</strong> passionate about building backend applications with
+                        <strong>Java and Spring Boot</strong>.<br><br>
+                        I started with HTML, CSS, C, and PHP at university, and over the past
+                        <strong>6 months at iCode Academy</strong>, I've been focusing on Java, Spring Boot, PostgreSQL, REST APIs,
+                        JPA/Hibernate, Spring Security, and Git/GitHub.<br><br>
+                        I learn by building, experimenting, and solving real problems — and I'm always looking for the next thing to
+                        improve.
+                    </p>
+
+                    <div class="info-grid">
+                        <div>
+                            <small data-i18n="info-name">Name</small>
+                            <strong>Myangaa</strong>
+                        </div>
+                        <div>
+                            <small data-i18n="info-age">Age</small>
+                            <strong>33</strong></div>
+                        <div>
+                            <small data-i18n="info-location">Location</small>
+                            <strong data-i18n="info-location-value">Ulaanbaatar, Mongolia</strong>
+                        </div>
+                        <div>
+                            <small data-i18n="info-email">Email</small>
+                            <strong>myangaa97@gmail.com</strong>
+                        </div>
+                        <div>
+                            <small data-i18n="info-freelance">Freelance</small>
+                            <strong data-i18n="info-freelance-value">Available</strong>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-primary" data-i18n="download-cv">Download CV ↓</a>
+                </div>
+
+                <div class="about-image glass">
+                    <div class="code-art">
+                        <span>&lt;/&gt;</span>
+                        <p data-i18n="code-art">build<br>learn<br>create</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="skills-eyebrow">My Expertise</p>
+                <h2 data-i18n="skills-title">Skills</h2>
+            </div>
+
+            <div class="filter glass">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter-all">All</button>
+                <button class="filter-btn" data-filter="frontend" data-i18n="filter-frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend" data-i18n="filter-backend">Backend</button>
+                <button class="filter-btn" data-filter="database" data-i18n="filter-database">Database</button>
+                <button class="filter-btn" data-filter="tools" data-i18n="filter-tools">Tools</button>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill glass" data-category="frontend"><b>HTML</b></div>
+                <div class="skill glass" data-category="frontend"><b>CSS</b></div>
+                <div class="skill glass" data-category="frontend"><b>JavaScript</b></div>
+                <div class="skill glass" data-category="frontend"><b>Thymeleaf</b></div>
+                <div class="skill glass" data-category="backend"><b>Java</b></div>
+                <div class="skill glass" data-category="backend"><b>Spring Boot</b></div>
+                <div class="skill glass" data-category="backend"><b>Spring Security</b></div>
+                <div class="skill glass" data-category="backend"><b>JPA / Hibernate</b></div>
+                <div class="skill glass" data-category="backend"><b>REST API</b></div>
+                <div class="skill glass" data-category="database"><b>PostgreSQL</b></div>
+                <div class="skill glass" data-category="database"><b>SQL</b></div>
+                <div class="skill glass" data-category="tools"><b>Git</b></div>
+                <div class="skill glass" data-category="tools"><b>GitHub</b></div>
+                <div class="skill glass" data-category="tools"><b>Maven</b></div>
+                <div class="skill glass" data-category="tools"><b>Postman</b></div>
+                <div class="skill glass" data-category="tools"><b>DBeaver</b></div>
+            </div>
+        </section>
+
+        <!-- JOURNEY -->
+        <section id="journey" class="section">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="journey-eyebrow">Career Path</p>
+                <h2 data-i18n="journey-title">My Journey</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">01</div>
+                    <div class="timeline-card glass">
+                        <h3 data-i18n="j1-title">University</h3>
+                        <p class="timeline-meta">HTML · CSS · C · PHP</p>
+                        <p class="timeline-text" data-i18n="j1-text">Built my first foundation in programming and web development through university courses, learning HTML, CSS, C, and the basics of PHP.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">02</div>
+                    <div class="timeline-card glass">
+                        <h3 data-i18n="j2-title">iCode Academy</h3>
+                        <p class="timeline-meta">6 Months · Java · Spring Boot · PostgreSQL</p>
+                        <p class="timeline-text" data-i18n="j2-text">Started learning software development more seriously at iCode Academy. Focused on Java and backend development while working with Spring Boot, Spring Data JPA, PostgreSQL, REST APIs, Spring Security, and Git/GitHub.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">03</div>
+                    <div class="timeline-card glass">
+                        <h3 data-i18n="j3-title">Building Real Projects</h3>
+                        <p class="timeline-meta">Practice · Projects · Problem Solving</p>
+                        <p class="timeline-text" data-i18n="j3-text">Applied what I learned by building real projects and working through authentication, CRUD operations, database relationships, validation, and API development.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">04</div>
+                    <div class="timeline-card glass">
+                        <h3 data-i18n="j4-title">What's Next</h3>
+                        <p class="timeline-meta">Testing · Docker · CI/CD · JavaScript</p>
+                        <p class="timeline-text" data-i18n="j4-text">Continuing to improve my development skills and expand my knowledge of testing, Docker, CI/CD, and modern frontend development.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="journey-close" data-i18n="journey-close">Still learning. Still building.</p>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="projects-eyebrow">My Work</p>
+                <h2 data-i18n="projects-title">Projects</h2>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project glass">
+                    <div class="project-image"><img src="images/simple portfolio.png" alt="Simple Portfolio"></div>
+                    <h3 data-i18n="proj1-title">Simple Portfolio Design</h3>
+                    <p>HTML · CSS</p>
+                    <a href="projects/simple-portfolio.html" data-i18n="view-details">View Details ↗</a>
+                </article>
+
+                <article class="project glass">
+                    <div class="project-image"><img src="images/alkusr portfolio.png" alt="Alkusr's Portfolio"></div>
+                    <h3 data-i18n="proj2-title">Alkusr's Portfolio Design</h3>
+                    <p>HTML · CSS</p>
+                    <a href="projects/alkusr-portfolio.html" data-i18n="view-details">View Details ↗</a>
+                </article>
+
+                <article class="project glass">
+                    <div class="project-image"><img src="images/decafe.png" alt="Coffee Shop Design"></div>
+                    <h3 data-i18n="proj3-title">Coffee Shop Design</h3>
+                    <p>HTML · CSS</p>
+                    <a href="projects/decafe.html" data-i18n="view-details">View Details ↗</a>
+                </article>
+
+                <article class="project glass">
+                    <div class="project-image"><img src="images/portfolio ui.png" alt="Portfolio UI"></div>
+                    <h3 data-i18n="proj4-title">Portfolio UI Design</h3>
+                    <p>HTML · CSS · JavaScript</p>
+                    <a href="projects/portfolio-ui.html" data-i18n="view-details">View Details ↗</a>
+                </article>
+
+                <article class="project glass">
+                    <div class="project-image"><img src="images/calculator app.png" alt="Calculator App"></div>
+                    <h3 data-i18n="proj5-title">Calculator App</h3>
+                    <p>HTML · CSS · JavaScript</p>
+                    <a href="projects/calculator-app.html" data-i18n="view-details">View Details ↗</a>
+                </article>
+
+                <article class="project glass">
+                    <div class="project-image"><img src="images/lms dashboard.png" alt="LMS Dashboard"></div>
+                    <h3 data-i18n="proj6-title">LMS Dashboard</h3>
+                    <p>HTML · CSS · JavaScript</p>
+                    <a href="projects/lms-dashboard.html" data-i18n="view-details">View Details ↗</a>
+                </article>
+
+                <article class="project glass">
+                    <div class="project-image"><img src="images/weather.png" alt="Weather App"></div>
+                    <h3 data-i18n="proj7-title">Weather App</h3>
+                    <p>JavaScript · API · CSS</p>
+                    <a href="projects/weather.html" data-i18n="view-details">View Details ↗</a>
+                </article>
+
+                <article class="project glass">
+                    <div class="project-image"><img src="images/pokedex.png" alt="Pokemon App"></div>
+                    <h3 data-i18n="proj8-title">Pokemon App</h3>
+                    <p>JavaScript · API · CSS</p>
+                    <a href="projects/pokemon.html" data-i18n="view-details">View Details ↗</a>
+                </article>
+
+                <article class="project glass">
+                    <div class="project-image"><img src="images/event booking.png" alt="Event Booking"></div>
+                    <h3 data-i18n="proj9-title">Event Booking and Ticketing Platform</h3>
+                    <p>JavaScript · API · CSS· SpringBoot · PostgreSQL</p>
+                    <a href="projects/event-booking.html" data-i18n="view-details">View Details ↗</a>
+                </article>
+
+                <article class="project glass">
+                    <div class="project-image"><img src="images/e-commerce.png" alt="E-commerce Marketplace"></div>
+                    <h3 data-i18n="proj10-title">E-commerce Marketplace</h3>
+                    <p>JavaScript · API · CSS· SpringBoot · PostgreSQL</p>
+                    <a href="projects/e-commerce.html" data-i18n="view-details">View Details ↗</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="contact-eyebrow">Get In Touch</p>
+                <h2 data-i18n="contact-title">Contact Me</h2>
+                <p data-i18n="contact-intro">Have a project in mind or want to work together? Feel free to contact me.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info glass">
+                    <div><span><i class="fa-solid fa-envelope"></i></span>
+                        <p><small data-i18n="info-email">Email</small><b>myangaa97@gmail.com</b></p>
+                    </div>
+                    <div><span><i class="fa-solid fa-phone"></i></span>
+                        <p><small data-i18n="info-phone">Phone</small><b>+976 60370604</b></p>
+                    </div>
+                    <div><span><i class="fa-solid fa-location-dot"></i></span>
+                        <p><small data-i18n="info-location">Location</small><b data-i18n="info-location-value">Ulaanbaatar,
+                                Mongolia</b></p>
+                    </div>
+                    <div><span><i class="fa-solid fa-clock"></i></span>
+                        <p><small data-i18n="info-availability">Availability</small><b data-i18n="available">Available for
+                                freelance</b></p>
+                    </div>
+
+                    <div class="socials">
+                        <a href="https://github.com/Myangaa97"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass">
+                    <input type="text" placeholder="Your Name" data-i18n-placeholder="form-name" required>
+                    <input type="email" placeholder="Your Email" data-i18n-placeholder="form-email" required>
+                    <input type="text" placeholder="Subject" data-i18n-placeholder="form-subject">
+                    <textarea placeholder="Message" data-i18n-placeholder="form-message" required></textarea>
+                    <button class="btn btn-primary" type="submit" data-i18n="send-message">Send Message ↗</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <span>Portfolio</span> <span data-i18n="footer-text">Myangaa · Junior Software Developer · 2026</span>
+    </footer>
+
+<script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

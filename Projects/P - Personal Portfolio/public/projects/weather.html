@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="background-shape shape-1"></div>
+    <div class="background-shape shape-2"></div>
+    <div class="background-shape shape-3"></div>
+    <header class="header glass"> <a href="../index.html#home" class="logo"> PORTFOLIO </a>
+        <nav class="nav"> <a class="nav-link" href="../index.html#home" data-i18n="nav-home">Home</a> <a
+                class="nav-link" href="../index.html#about" data-i18n="nav-about">About</a> <a class="nav-link"
+                href="../index.html#skills" data-i18n="nav-skills">Skills</a> <a class="nav-link"
+                href="../index.html#projects" data-i18n="nav-projects">Projects</a> <a class="nav-link"
+                href="../index.html#contact" data-i18n="nav-contact">Contact</a> </nav> <button class="lang-btn"
+            id="lang-toggle" aria-label="Switch language">日本語</button> <button class="menu-btn"
+            aria-label="Open menu">☰</button>
+    </header>
+    <main>
+        <section id="projects" class="section">
+            <div class="back"><a href="../index.html#projects" data-i18n="back-projects">← Back to Projects</a></div>
+            <div class="details-top">
+                <div class="project-preview glass">
+                    <div class="preview-box"><img src="../images/weather.png" alt=""></div>
+                </div>
+                <div class="details-intro">
+                    <p class="eyebrow" data-i18n="p7-eyebrow">Weather</p>
+                    <h2 data-i18n="proj7-title">Weather App</h2>
+                    <p data-i18n="p7-intro"> A lightweight weather app built with JavaScript that fetches live forecasts
+                        from a weather API and displays them with clean CSS. </p>
+                    <div class="tags"> <span>JavaScript</span><span>API</span><span>CSS</span> </div>
+                    <div class="actions"> <a href="https://nippon-spring-2026-myangaa-9430e.web.app/"
+                            class="btn btn-primary" data-i18n="live-demo" target="_blank">Live Demo ↗</a> <a href="#"
+                            class="btn btn-secondary" data-i18n="view-code">View Code</a> </div>
+                </div>
+            </div>
+            <div class="details-card glass">
+                <div>
+                    <h3 data-i18n="details-overview">Project Overview</h3>
+                    <p data-i18n="p7-overview"> Enter a city name to get the current conditions and a 5-day forecast,
+                        including temperature, humidity and wind speed. </p>
+                    <h3 data-i18n="details-features">Key Features</h3>
+                    <ul>
+                        <li data-i18n="p7-feat-1">Live weather API data</li>
+                        <li data-i18n="p7-feat-2">5-day forecast</li>
+                        <li data-i18n="p7-feat-3">Search by city</li>
+                        <li data-i18n="p7-feat-4">Temperature unit toggle</li>
+                        <li data-i18n="p7-feat-5">Geolocation support</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 data-i18n="details-info">Project Info</h3>
+                    <dl>
+                        <dt data-i18n="field-client">Client</dt>
+                        <dd data-i18n="value-personal">Personal Project</dd>
+                        <dt data-i18n="field-date">Date</dt>
+                        <dd>Aug 2024</dd>
+                        <dt data-i18n="field-role">Role</dt>
+                        <dd data-i18n="value-frontend">Frontend Developer</dd>
+                        <dt data-i18n="field-category">Category</dt>
+                        <dd data-i18n="value-webapp">Web Application</dd>
+                        <dt data-i18n="field-website">Website</dt>
+                        <dd>example.com</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> <span>Portfolio</span> <span data-i18n="footer-text">Myangaa · Junior Software Developer · 2026</span>
+    </footer>
+    <script>window.PAGE_TITLE = { en: "Weather App", ja: "天気アプリ" };</script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

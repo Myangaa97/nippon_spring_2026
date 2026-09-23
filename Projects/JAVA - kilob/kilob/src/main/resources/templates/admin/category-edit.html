@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ангилал засах</title>
+</head>
+<body>
+    <h2>Ангилал засах</h2>
+
+    <form th:action="@{/admin/categories/{id}/edit(id=${category.id})}" method="post">
+        <input type="text" name="name" th:value="${category.name}" required/>
+        <button type="submit">Хадгалах</button>
+    </form>
+
+    <a th:href="@{/admin/categories}">← Буцах</a>
+</body>
+</html>

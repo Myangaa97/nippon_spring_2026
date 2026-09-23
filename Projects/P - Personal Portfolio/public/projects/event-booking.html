@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking and Ticketing Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="background-shape shape-1"></div>
+    <div class="background-shape shape-2"></div>
+    <div class="background-shape shape-3"></div>
+    <header class="header glass"> <a href="../index.html#home" class="logo"> PORTFOLIO </a>
+        <nav class="nav"> <a class="nav-link" href="../index.html#home" data-i18n="nav-home">Home</a> <a
+                class="nav-link" href="../index.html#about" data-i18n="nav-about">About</a> <a class="nav-link"
+                href="../index.html#skills" data-i18n="nav-skills">Skills</a> <a class="nav-link"
+                href="../index.html#projects" data-i18n="nav-projects">Projects</a> <a class="nav-link"
+                href="../index.html#contact" data-i18n="nav-contact">Contact</a> </nav> <button class="lang-btn"
+            id="lang-toggle" aria-label="Switch language">日本語</button> <button class="menu-btn"
+            aria-label="Open menu">☰</button>
+    </header>
+    <main>
+        <section id="projects" class="section">
+            <div class="back"><a href="../index.html#projects" data-i18n="back-projects">← Back to Projects</a></div>
+            <div class="details-top">
+                <div class="project-preview glass">
+                    <div class="preview-box"><img src="../images/event booking.png" alt=""></div>
+                </div>
+                <div class="details-intro">
+                    <p class="eyebrow" data-i18n="p9-eyebrow">Event</p>
+                    <h2 data-i18n="proj9-title">Event Booking and Ticketing Platform</h2>
+                    <p data-i18n="p9-intro"> An event booking and ticketing platform backed by Spring Boot and
+                        PostgreSQL, with a JavaScript front end to browse and reserve tickets. </p>
+                    <div class="tags"> <span>JavaScript</span><span>API</span><span>CSS</span><span>Spring
+                            Boot</span><span>PostgreSQL</span> </div>
+                    <div class="actions"> <a href="#" class="btn btn-primary" data-i18n="live-demo">Live Demo ↗</a> <a
+                            href="https://github.com/Myangaa97/spring-boot-event-capstone" class="btn btn-secondary"
+                            data-i18n="view-code" target="_blank">View Code</a> </div>
+                </div>
+            </div>
+            <div class="details-card glass">
+                <div>
+                    <h3 data-i18n="details-overview">Project Overview</h3>
+                    <p data-i18n="p9-overview"> Browse events, select seats and book tickets while the backend handles
+                        authentication, reservations and payments through Spring Security and REST APIs. </p>
+                    <h3 data-i18n="details-features">Key Features</h3>
+                    <ul>
+                        <li data-i18n="p9-feat-1">Event listings & search</li>
+                        <li data-i18n="p9-feat-2">Ticket booking flow</li>
+                        <li data-i18n="p9-feat-3">REST API (Spring Boot)</li>
+                        <li data-i18n="p9-feat-4">PostgreSQL database</li>
+                        <li data-i18n="p9-feat-5">Spring Security auth</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 data-i18n="details-info">Project Info</h3>
+                    <dl>
+                        <dt data-i18n="field-client">Client</dt>
+                        <dd data-i18n="value-personal">Personal Project</dd>
+                        <dt data-i18n="field-date">Date</dt>
+                        <dd>2026</dd>
+                        <dt data-i18n="field-role">Role</dt>
+                        <dd data-i18n="value-frontend">Frontend Developer</dd>
+                        <dt data-i18n="field-category">Category</dt>
+                        <dd data-i18n="value-webapp">Web Application</dd>
+                        <dt data-i18n="field-website">Website</dt>
+                        <dd>example.com</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> <span>Portfolio</span> <span data-i18n="footer-text">Myangaa · Junior Software Developer · 2026</span>
+    </footer>
+    <script>window.PAGE_TITLE = { en: "Event Booking and Ticketing Platform", ja: "イベント予約・チケットプラットフォーム" };</script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

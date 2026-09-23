@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${post.title}">Post</title>
+</head>
+<body>
+    <a th:href="@{/posts}">← Буцах</a>
+
+    <h1 th:text="${post.title}"></h1>
+    <p th:text="${post.user.username}"></p>
+    <p th:text="${#temporals.format(post.createdAt, 'yyyy-MM-dd HH:mm')}"></p>
+
+    <!-- ---------------- LIKE ---------------- -->
+    <form th:action="@{/posts/{id}/like(id=${post.id})}" method="post" style="display:inline;">
+        <button type="submit">❤️ Like (<span th:text="${post.likeCount}"></span>)</button>
+    </form>
+    <!-- ---------------------------------------- -->
+
+    <div th:utext="${post.content}"></div>
+
+    <div sec:authorize="hasAnyRole('ADMIN','SUPER_ADMIN')">
+        <a th:href="@{/admin/posts/{id}/edit(id=${post.id})}">Засах</a>
+        <form th:action="@{/admin/posts/{id}/delete(id=${post.id})}" method="post" style="display:inline;">
+            <button type="submit">Устгах</button>
+        </form>
+    </div>
+
+    <h3>Сэтгэгдэл</h3>
+
+    <div sec:authorize="isAuthenticated()">
+        <form th:action="@{/posts/{postId}/comments(postId=${post.id})}" method="post">
+            <textarea name="content" placeholder="Сэтгэгдэл бичих..." required></textarea>
+            <button type="submit">Илгээх</button>
+        </form>
+    </div>
+    <div sec:authorize="isAnonymous()">
+        <p>Сэтгэгдэл бичихийн тулд <a th:href="@{/login}">нэвтэрнэ үү</a>.</p>
+    </div>
+
+    <div th:each="comment : ${comments}">
+        <p>
+            <strong th:text="${comment.user.username}"></strong>
+            <span th:text="${#temporals.format(comment.createdAt, 'yyyy-MM-dd HH:mm')}"></span>
+        </p>
+        <p th:text="${comment.content}"></p>
+
+        <form sec:authorize="isAuthenticated()"
+              th:if="${comment.user.username == #authentication.name} or ${#authorization.expression('hasAnyRole(''ADMIN'',''SUPER_ADMIN'')')}"
+              th:action="@{/comments/{id}/delete(id=${comment.id})}" method="post" style="display:inline;">
+            <input type="hidden" name="postId" th:value="${post.id}"/>
+            <button type="submit">Устгах</button>
+        </form>
+        <hr/>
+    </div>
+</body>
+</html>

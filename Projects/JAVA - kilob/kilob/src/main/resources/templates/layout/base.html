@@ -1,0 +1,9 @@
+<div sec:authorize="isAuthenticated()">
+    <a th:href="@{/profile}" th:text="${#authentication.name}"></a>
+    <form th:action="@{/logout}" method="post" style="display:inline;">
+        <button type="submit">Гарах</button>
+    </form>
+</div>
+<div sec:authorize="isAnonymous()">
+    <a th:href="@{/login}">Нэвтрэх</a>
+</div>
