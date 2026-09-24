@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myangaa T. — Junior Software Developer</title>
+    <title data-i18n="title">Personal Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -39,10 +39,12 @@
         <section id="home" class="section hero">
             <div class="hero-content">
                 <p class="eyebrow" data-i18n="hero-eyebrow">Hello, I'm</p>
-                <h1>Myangaa .<br><span data-i18n="role">Junior Software Developer</span></h1>
+                <h1>Myangaa .<br><span data-i18n="role">Full-Stack Developer</span></h1>
                 <p class="lead" data-i18n="hero-lead">
                     I build modern and responsive web applications with a focus on
                     performance, clean architecture and great user experience.
+                    I build backend applications with Java and Spring Boot, while
+                    continuously improving my skills through real-world projects.
                 </p>
 
                 <div class="actions">
@@ -51,7 +53,9 @@
                 </div>
 
                 <div class="socials">
-                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/Myangaa97" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                     <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="#contact" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
@@ -60,18 +64,15 @@
 
             <div class="hero-photo glass">
                 <div class="photo-placeholder">
-                    <div class="avatar">AV</div>
-                    <p data-i18n="your-photo">Your Photo</p>
-                    <small data-i18n="photo-hint">Replace this area with your image</small>
+                    <img src="./images/1.png" alt="">
                 </div>
-                <div class="availability"><i></i><span data-i18n="available">Available for freelance</span></div>
+                <div class="availability"><i></i><span data-i18n="available">Open to Software Developer Opportunities</span></div>
             </div>
 
             <div class="stats glass">
-                <div><strong>1</strong><span data-i18n="stat-years">Years Experience</span></div>
-                <div><strong>9</strong><span data-i18n="stat-projects">Projects Completed</span></div>
-                <div><strong>10+</strong><span data-i18n="stat-tech">Technologies</span></div>
-                <div><strong>100%</strong><span data-i18n="stat-satisfaction">Client Satisfaction</span></div>
+                <div><strong>6</strong><span data-i18n="stat-learning">Months Learning</span></div>
+                <div><strong>10</strong><span data-i18n="stat-built">Projects Built</span></div>
+                <div><strong>Java</strong><span data-i18n="stat-backend">Backend Focused</span></div>
             </div>
         </section>
 
@@ -86,44 +87,15 @@
                 <div class="about-copy glass">
                     <p data-i18n="about-copy">
                         I'm a <strong>Junior Software Developer</strong> passionate about building backend applications with
-                        <strong>Java and Spring Boot</strong>.<br><br>
+                        <strong>Java and Spring Boot</strong>.<br>
                         I started with HTML, CSS, C, and PHP at university, and over the past
                         <strong>6 months at iCode Academy</strong>, I've been focusing on Java, Spring Boot, PostgreSQL, REST APIs,
-                        JPA/Hibernate, Spring Security, and Git/GitHub.<br><br>
+                        JPA/Hibernate, Spring Security, and Git/GitHub.<br>
                         I learn by building, experimenting, and solving real problems — and I'm always looking for the next thing to
                         improve.
                     </p>
 
-                    <div class="info-grid">
-                        <div>
-                            <small data-i18n="info-name">Name</small>
-                            <strong>Myangaa</strong>
-                        </div>
-                        <div>
-                            <small data-i18n="info-age">Age</small>
-                            <strong>33</strong></div>
-                        <div>
-                            <small data-i18n="info-location">Location</small>
-                            <strong data-i18n="info-location-value">Ulaanbaatar, Mongolia</strong>
-                        </div>
-                        <div>
-                            <small data-i18n="info-email">Email</small>
-                            <strong>myangaa97@gmail.com</strong>
-                        </div>
-                        <div>
-                            <small data-i18n="info-freelance">Freelance</small>
-                            <strong data-i18n="info-freelance-value">Available</strong>
-                        </div>
-                    </div>
-
                     <a href="#" class="btn btn-primary" data-i18n="download-cv">Download CV ↓</a>
-                </div>
-
-                <div class="about-image glass">
-                    <div class="code-art">
-                        <span>&lt;/&gt;</span>
-                        <p data-i18n="code-art">build<br>learn<br>create</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -137,24 +109,25 @@
 
             <div class="filter glass">
                 <button class="filter-btn active" data-filter="all" data-i18n="filter-all">All</button>
-                <button class="filter-btn" data-filter="frontend" data-i18n="filter-frontend">Frontend</button>
                 <button class="filter-btn" data-filter="backend" data-i18n="filter-backend">Backend</button>
                 <button class="filter-btn" data-filter="database" data-i18n="filter-database">Database</button>
+                <button class="filter-btn" data-filter="frontend" data-i18n="filter-frontend">Frontend</button>
                 <button class="filter-btn" data-filter="tools" data-i18n="filter-tools">Tools</button>
             </div>
 
             <div class="skills-grid">
+                <div class="skill glass" data-category="backend"><b>Java</b></div>
+                <div class="skill glass" data-category="backend"><b>Spring Boot</b></div>
+                <div class="skill glass" data-category="backend"><b>Spring Security</b></div>
+                <div class="skill glass" data-category="backend"><b>Spring Data JPA</b></div>
+                <div class="skill glass" data-category="backend"><b>Hibernate</b></div>
+                <div class="skill glass" data-category="backend"><b>REST API</b></div>
+                <div class="skill glass" data-category="database"><b>PostgreSQL</b></div>
+                <div class="skill glass" data-category="database"><b>SQL</b></div>
                 <div class="skill glass" data-category="frontend"><b>HTML</b></div>
                 <div class="skill glass" data-category="frontend"><b>CSS</b></div>
                 <div class="skill glass" data-category="frontend"><b>JavaScript</b></div>
                 <div class="skill glass" data-category="frontend"><b>Thymeleaf</b></div>
-                <div class="skill glass" data-category="backend"><b>Java</b></div>
-                <div class="skill glass" data-category="backend"><b>Spring Boot</b></div>
-                <div class="skill glass" data-category="backend"><b>Spring Security</b></div>
-                <div class="skill glass" data-category="backend"><b>JPA / Hibernate</b></div>
-                <div class="skill glass" data-category="backend"><b>REST API</b></div>
-                <div class="skill glass" data-category="database"><b>PostgreSQL</b></div>
-                <div class="skill glass" data-category="database"><b>SQL</b></div>
                 <div class="skill glass" data-category="tools"><b>Git</b></div>
                 <div class="skill glass" data-category="tools"><b>GitHub</b></div>
                 <div class="skill glass" data-category="tools"><b>Maven</b></div>
@@ -218,6 +191,26 @@
                 <h2 data-i18n="projects-title">Projects</h2>
             </div>
 
+            <div class="featured-grid">
+
+                <article class="project glass featured">
+                    <span class="featured-badge">★ Featured</span>
+                    <div class="project-image"><img src="images/event booking.png" alt="Event Booking"></div>
+                    <h3 data-i18n="proj9-title">Event Booking and Ticketing Platform</h3>
+                    <p>Java · Spring Boot · PostgreSQL · JPA · Spring Security · Thymeleaf</p>
+                    <a href="projects/event-booking.html" data-i18n="view-details">View Details ↗</a>
+                </article>
+
+                <article class="project glass featured">
+                    <span class="featured-badge">★ Featured</span>
+                    <div class="project-image"><img src="images/e-commerce.jpg" alt="E-commerce Marketplace"></div>
+                    <h3 data-i18n="proj10-title">E-Commerce Website</h3>
+                    <p>Java · Spring Boot · PostgreSQL · JPA · Spring Security · Thymeleaf</p>
+                    <a href="projects/e-commerce.html" data-i18n="view-details">View Details ↗</a>
+                </article>
+
+            </div>
+
             <div class="project-grid">
 
                 <article class="project glass">
@@ -275,20 +268,6 @@
                     <p>JavaScript · API · CSS</p>
                     <a href="projects/pokemon.html" data-i18n="view-details">View Details ↗</a>
                 </article>
-
-                <article class="project glass">
-                    <div class="project-image"><img src="images/event booking.png" alt="Event Booking"></div>
-                    <h3 data-i18n="proj9-title">Event Booking and Ticketing Platform</h3>
-                    <p>JavaScript · API · CSS· SpringBoot · PostgreSQL</p>
-                    <a href="projects/event-booking.html" data-i18n="view-details">View Details ↗</a>
-                </article>
-
-                <article class="project glass">
-                    <div class="project-image"><img src="images/e-commerce.png" alt="E-commerce Marketplace"></div>
-                    <h3 data-i18n="proj10-title">E-commerce Marketplace</h3>
-                    <p>JavaScript · API · CSS· SpringBoot · PostgreSQL</p>
-                    <a href="projects/e-commerce.html" data-i18n="view-details">View Details ↗</a>
-                </article>
             </div>
         </section>
 
@@ -341,7 +320,8 @@
         <span>Portfolio</span> <span data-i18n="footer-text">Myangaa · Junior Software Developer · 2026</span>
     </footer>
 
-<script src="js/i18n.js"></script>
+<script>window.PAGE_TITLE = { en: "Myangaa T. — Junior Software Developer", ja: "Myangaa T. — ジュニアソフトウェア開発者" };</script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
 </body>

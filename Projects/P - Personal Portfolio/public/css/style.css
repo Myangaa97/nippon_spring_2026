@@ -164,7 +164,6 @@ footer span {
     width: min(1180px, calc(100% - 40px));
     margin: 0 auto;
     padding: 130px 0 40px;
-    min-height: 720px;
     scroll-margin-top: 80px;
 }
 
@@ -276,37 +275,16 @@ h1 span {
     width: 85%;
     height: 88%;
     border-radius: 20px;
+    overflow: hidden;
     background: rgba(255, 255, 255, .05);
     border: 1px solid rgba(255, 255, 255, .08);
-    display: grid;
-    place-content: center;
-    text-align: center;
-    color: var(--muted);
 }
 
-.avatar {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 14px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    background: linear-gradient(135deg, #7c6cff, #b3adff);
-    color: white;
-    font-size: 28px;
-    font-weight: 800;
-    box-shadow: 0 15px 40px rgba(109, 93, 252, .28);
-}
-
-.photo-placeholder p {
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--text);
-}
-
-.photo-placeholder small {
-    font-size: 12px;
-    margin-top: 5px;
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .availability {
@@ -332,14 +310,11 @@ h1 span {
 }
 
 .stats {
-    position: absolute;
-    left: 0;
-    bottom: 25px;
-    width: 100%;
+    grid-column: 1 / -1;
     padding: 23px;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     text-align: center;
 }
 
@@ -375,12 +350,11 @@ h1 span {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1.2fr .8fr;
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
 .about-copy,
-.about-image,
 .filter,
 .skill,
 .project,
@@ -396,72 +370,10 @@ h1 span {
 }
 
 .about-copy>p {
-    max-width: 620px;
     color: var(--muted);
     font-size: 14px;
     line-height: 1.9;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin: 25px 0;
-}
-
-.info-grid div {
-    padding: 15px;
-    border: 1px solid var(--line);
-    border-radius: 13px;
-    background: rgba(255, 255, 255, .04);
-}
-
-.info-grid small,
-.info-grid strong {
-    display: block;
-}
-
-.info-grid small {
-    color: var(--muted);
-    font-size: 12px;
-    margin-bottom: 6px;
-}
-
-.info-grid strong {
-    font-size: 12px;
-}
-
-.about-image {
-    min-height: 350px;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-    background: radial-gradient(circle at 50% 30%, rgba(120, 105, 255, .22), transparent 35%), rgba(255, 255, 255, .05);
-}
-
-.code-art {
-    width: 70%;
-    height: 70%;
-    border-radius: 18px;
-    border: 1px solid rgba(255, 255, 255, .08);
-    background: rgba(255, 255, 255, .06);
-    box-shadow: 0 25px 60px rgba(0, 0, 0, .2);
-    padding: 30px;
-    position: relative;
-}
-
-.code-art span {
-    font-size: 50px;
-    color: var(--primary);
-    font-weight: 800;
-}
-
-.code-art p {
-    margin-top: 25px;
-    color: var(--muted);
-    line-height: 1.8;
-    font-size: 18px;
-    font-weight: 700;
+    padding-bottom: 30px;
 }
 
 .filter {
@@ -577,6 +489,44 @@ h1 span {
     gap: 18px;
 }
 
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-bottom: 22px;
+}
+
+.featured {
+    position: relative;
+    padding: 14px;
+    border: 1px solid rgba(124, 108, 255, .35);
+}
+
+.featured .project-image {
+    height: 230px;
+    margin: -14px -14px 16px;
+    border-radius: 16px 16px 0 0;
+}
+
+.featured h3 {
+    font-size: 16px;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 24px;
+    right: 26px;
+    z-index: 1;
+    background: linear-gradient(135deg, #7c6cff, #b3adff);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 999px;
+    letter-spacing: .04em;
+    box-shadow: 0 8px 20px rgba(109, 93, 252, .4);
+}
+
 .project {
     padding: 12px;
     transition: .3s;
@@ -598,6 +548,7 @@ h1 span {
     width: 100%;
     height: 100%;
     display: block;
+    object-fit: cover;
 }
 
 .project h3 {
@@ -727,7 +678,7 @@ h1 span {
 
 .details-card h3 {
     font-size: 14px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .details-card p,
@@ -866,20 +817,14 @@ footer span {
         width: min(430px, 100%);
     }
 
-    .stats {
-        position: relative;
-        bottom: auto;
-        margin-top: 20px;
-    }
-
-    .about-grid,
     .details-top,
     .contact-grid {
         grid-template-columns: 1fr;
     }
 
     .skills-grid,
-    .project-grid {
+    .project-grid,
+    .featured-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -932,21 +877,13 @@ footer span {
     h1 {
         font-size: 43px;
     }
-    .stats {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px 0;
-    }
-
-    .stats div:nth-child(3) {
-        border-left: 0;
-    }
 
     .skills-grid,
-    .project-grid {
+    .project-grid,
+    .featured-grid {
         grid-template-columns: 1fr;
     }
 
-    .info-grid,
     .details-card {
         grid-template-columns: 1fr;
     }
